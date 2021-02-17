@@ -24,3 +24,6 @@
   - Scheduling algorithm
 - Collect list of ideas for discussion
 - Schedule a meet about PolarisCloud 
+- Edge models : KubeEdge vs Light mode KubeEdge vs K3s
+- Security vs latency, websocket or better options.
+- Scale up from 2,3k 
