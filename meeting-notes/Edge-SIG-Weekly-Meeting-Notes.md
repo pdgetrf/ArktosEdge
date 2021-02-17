@@ -7,7 +7,7 @@
   - Code (Extend Arktos to deploy to Edge https://github.com/pdgetrf/ArktosEdge/issues/3)
 - Edge project tracking repo
 - KubeEdge discussion
-  - Setup
+  - Setup & play ([same network](https://github.com/pdgetrf/ArktosEdge/wiki/KubeEdge-Setup-(Same-Network)), [cloud in GCP, edge in AWS](https://github.com/pdgetrf/ArktosEdge/wiki/KubeEdge-Setup-(Different-Network)))
   - Code walkthrough & deep(er) dive
 - Research
   - [AWS Innovate](https://aws.amazon.com/events/aws-innovate/machine-learning/?sc_channel=em&sc_campaign=APAC_FIELD_T1_en-innovate-aiml_20210224_7014z000001MMP3&sc_publisher=aws&sc_medium=em_aws_innovate_aiml&sc_content=field_t1event_field&sc_country=mult&sc_geo=mult&sc_category=mult&sc_outcome=field&trkCampaign=innovate-ml&trk=em_regconfirmed_innovateml21)
