@@ -1,1 +1,1 @@
-# ArktosEdge
+# ArktosEdge Scoping & Planning
