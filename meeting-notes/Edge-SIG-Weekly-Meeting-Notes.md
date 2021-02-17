@@ -18,3 +18,8 @@
     - Model deployment ([A good demo using GCP](https://youtu.be/fw6NMQrYc6w))
     - Scalability
     - K3s vs KubeEdge
+
+### Notes:
+- Global scheduling vs Edge scheduling & placement
+  - Scheduling algorithm
+- Collect list of ideas for discussion
