@@ -13,3 +13,7 @@
 - Research
   - [AWS Innovate](https://aws.amazon.com/events/aws-innovate/machine-learning/?sc_channel=em&sc_campaign=APAC_FIELD_T1_en-innovate-aiml_20210224_7014z000001MMP3&sc_publisher=aws&sc_medium=em_aws_innovate_aiml&sc_content=field_t1event_field&sc_country=mult&sc_geo=mult&sc_category=mult&sc_outcome=field&trkCampaign=innovate-ml&trk=em_regconfirmed_innovateml21)
   - [State of AI 2020 Report](https://www.stateof.ai), also a [discussion of it](https://youtu.be/o2fYsrV-YlQ)
+  - Topics:
+    - Scheduling
+    - PolarisCloud - Vector to the Edge
+    - Model deployment ([A good demo using GCP](https://youtu.be/fw6NMQrYc6w))
