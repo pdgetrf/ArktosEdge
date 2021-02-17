@@ -23,3 +23,4 @@
 - Global scheduling vs Edge scheduling & placement
   - Scheduling algorithm
 - Collect list of ideas for discussion
+- Schedule a meet about PolarisCloud 
