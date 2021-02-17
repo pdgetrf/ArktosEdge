@@ -6,6 +6,7 @@
   - Research
   - Code (Extend Arktos to deploy to Edge https://github.com/pdgetrf/ArktosEdge/issues/3)
 - Edge project tracking repo
+  - [Project Tracking](https://github.com/pdgetrf/ArktosEdge/projects/1)
 - KubeEdge discussion
   - Setup & play ([same network](https://github.com/pdgetrf/ArktosEdge/wiki/KubeEdge-Setup-(Same-Network)), [cloud in GCP, edge in AWS](https://github.com/pdgetrf/ArktosEdge/wiki/KubeEdge-Setup-(Different-Network)))
   - Code walkthrough & deep(er) dive
