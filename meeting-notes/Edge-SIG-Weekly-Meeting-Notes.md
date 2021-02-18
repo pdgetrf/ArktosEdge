@@ -27,3 +27,4 @@
 - Edge models : KubeEdge vs Light mode KubeEdge vs K3s
 - Security vs latency, websocket or better options.
 - Scale up from 2,3k 
+- KubeFlow & https://github.com/kubeflow/kfserving
