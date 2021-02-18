@@ -28,3 +28,14 @@
 - Security vs latency, websocket or better options.
 - Scale up from 2,3k 
 - KubeFlow & https://github.com/kubeflow/kfserving
+
+## 02/25
+
+### Agenda
+- Possible Features
+  -  Autonomous Edge 
+     - KubeEdge Site vs SuperEdge vs OpenYurt vs OpenEdge
+     - K3s
+     - ??
+
+ 
