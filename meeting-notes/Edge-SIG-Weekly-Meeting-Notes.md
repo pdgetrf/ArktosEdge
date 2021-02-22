@@ -32,10 +32,13 @@
 ## 02/25
 
 ### Agenda
+- Landscapes
+  - [CNCF Cloud Native Interactive Landscape](https://landscape.cncf.io/)
+  - [LF AI & Data Foundation Interactive Landscape](https://landscape.lfai.foundation/)
 - Possible Features
   -  Autonomous Edge 
      - KubeEdge Site vs SuperEdge vs OpenYurt vs OpenEdge
-     - K3s
+     - K3s + Rancher CD
      - ??
 
  
