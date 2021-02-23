@@ -1,3 +1,8 @@
+- Architecture
+
+![](images/landscape.png)
+
+
 - Must haves:
   - cloud <-> edge tunnel/proxy
   - edge anomomy
@@ -17,6 +22,5 @@
 
 - ML & AI (for demo maybe)
   - KubeFlow
-  
-- IoT
+
 
