@@ -1,8 +1,8 @@
 - Must haves:
-  - cloud <-> edge tunnelling
+  - cloud <-> edge tunnel/proxy
   - edge anomomy
-      - edge-side apiserver/caching layer
-  - health check
+      - edge-side apiserver/caching layer 
+      - edge node and pod health check / stay alive
   - resource grouping (node group, cluster group, deploymet/service group)
 
 - New Features
