@@ -21,6 +21,6 @@
     - e.g. ARM mixed with Intel
 
 - ML & AI (for demo maybe)
-  - KubeFlow
+  - [KubeFlow](https://www.youtube.com/watch?v=HBxyLnEzyhw)
 
 
