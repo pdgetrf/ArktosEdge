@@ -1,4 +1,4 @@
-- Architecture
+- Vision
 
 ![](images/landscape.png)
 
