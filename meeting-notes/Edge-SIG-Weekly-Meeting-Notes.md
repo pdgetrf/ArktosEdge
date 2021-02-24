@@ -20,14 +20,14 @@
     - K3s vs KubeEdge
 
 ### Notes:
-- Global scheduling vs Edge scheduling & placement
+- [x] Global scheduling vs Edge scheduling & placement
   - Scheduling algorithm
-- Collect list of ideas for discussion
-- Schedule a meet about PolarisCloud 
-- Edge models : KubeEdge vs Light mode KubeEdge vs K3s
-- Security vs latency, websocket or better options.
-- Scale up from 2,3k 
-- KubeFlow & https://github.com/kubeflow/kfserving
+- [x] Collect list of ideas for discussion
+- [x] Schedule a meet about PolarisCloud 
+- [x] Edge models : KubeEdge vs Light mode KubeEdge vs K3s
+- [ ] Security vs latency, websocket or better options.
+- [ ] Scale up from 2,3k 
+- [x] KubeFlow & https://github.com/kubeflow/kfserving
 
 ## 02/24
 
