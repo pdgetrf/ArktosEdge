@@ -54,3 +54,8 @@
   - [CNCF Cloud Native Interactive Landscape](https://landscape.cncf.io/)
   - [LF AI & Data Foundation Interactive Landscape](https://landscape.lfai.foundation/)
   - [Looks familiar?](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alamy.com%2Fstock-photo-rear-of-a-subaru-imprezza-wrx-wagon-covered-in-bumperstickers-with-19518801.html&psig=AOvVaw3uMN5aEUxpywIhzk69H26W&ust=1614118138974000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJiRl-XA_u4CFQAAAAAdAAAAABAO)
+
+
+### Notes
+- [ ] lite edge vs full fledged
+- 
