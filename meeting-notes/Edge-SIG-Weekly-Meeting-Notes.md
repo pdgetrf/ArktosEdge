@@ -29,17 +29,28 @@
 - Scale up from 2,3k 
 - KubeFlow & https://github.com/kubeflow/kfserving
 
-## 02/25
+## 02/24
 
 ### Agenda
-- Landscapes
+- Edge solution survey (tracking by https://github.com/pdgetrf/ArktosEdge/issues/9)
+  - Single node edge
+  - Autonomous cluster at Edge (see slides)
+  - Features
+    - cloud <-> edge tunnel/proxy
+    - edge anomomy
+      - edge-side apiserver/caching layer
+      - edge node and pod health check / stay alive
+      - resource grouping (node group, cluster group, deploymet/service group)
+    - edge cluster
+      - deployment and management
+      - self-managing cluster, master migration on power loss
+
+- Other tracking topics
+  - KubeEdge MEC Architectur (Mizar into EdgeMesh, gateway, Edge-edge comm, Deepak 3/3 talk)
+  - RAINBOW Fog-aware Scheduler
+
+
+- New Finds
   - [CNCF Cloud Native Interactive Landscape](https://landscape.cncf.io/)
   - [LF AI & Data Foundation Interactive Landscape](https://landscape.lfai.foundation/)
   - [Looks familiar?](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alamy.com%2Fstock-photo-rear-of-a-subaru-imprezza-wrx-wagon-covered-in-bumperstickers-with-19518801.html&psig=AOvVaw3uMN5aEUxpywIhzk69H26W&ust=1614118138974000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJiRl-XA_u4CFQAAAAAdAAAAABAO)
-- Possible Features
-  -  Autonomous Edge 
-     - KubeEdge Site vs SuperEdge vs OpenYurt vs OpenEdge
-     - K3s + Rancher CD
-     - Tunneling between edge and cloud
-
- 
