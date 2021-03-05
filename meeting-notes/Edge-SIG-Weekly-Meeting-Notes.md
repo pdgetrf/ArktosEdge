@@ -67,7 +67,7 @@
 ## 03/03
 
 ### Agenda
-- EdgeCluster pitch
+- EdgeCluster feature
   - Edge capability: survive both network and node failure
   - Locality is important
   - Self-managing cluster
