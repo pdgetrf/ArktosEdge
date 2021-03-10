@@ -73,4 +73,8 @@
   - Self-managing cluster
   - EdgeCluster as a custom resource
 
+## 03/10
+
+### Agenda
+- n-ary tree based Arktos Edge topology
 
