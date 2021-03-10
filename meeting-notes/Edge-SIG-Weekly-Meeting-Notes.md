@@ -1,3 +1,8 @@
+# Centaurus - Edge+AI SIG Weekly Meeting
+- Wednesday 3:00 - 4:00 PM
+- [ZOOM](https://futurewei.zoom.us/j/93051877352?from=addon)
+
+
 ## 02/17
 
 ### Agenda:
@@ -58,4 +63,14 @@
 
 ### Notes
 - [ ] lite edge vs full fledged
-- 
+
+## 03/03
+
+### Agenda
+- EdgeCluster feature
+  - Edge capability: survive both network and node failure
+  - Locality is important
+  - Self-managing cluster
+  - EdgeCluster as a custom resource
+
+
