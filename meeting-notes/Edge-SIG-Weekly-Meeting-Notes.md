@@ -78,3 +78,13 @@
 ### Agenda
 - n-ary tree based Arktos Edge topology
 
+### Notes
+- complexity worth it?
+- local firewall preventing clusters to connect to their root clusers
+- local node vs gloal management
+- multi-tenancy at edge node
+- use case scenario for hireachy structure
+  - kube MEC meeting
+- centralized controls over de-centralized control
+- schedule meeting with Deepak about network and security
+
