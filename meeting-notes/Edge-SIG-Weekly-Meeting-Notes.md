@@ -79,12 +79,25 @@
 - n-ary tree based Arktos Edge topology
 
 ### Notes
-- [ ] complexity worth it?
+- [x] complexity worth it?
 - [ ] local firewall preventing clusters to connect to their root clusers
-- [ ] local node vs gloal management
-- [ ] multi-tenancy at edge node
-- [ ] use case scenario for hireachy structure
+- [x] local node vs gloal management
+- [x] multi-tenancy at edge node (in recursive case, there's a conflict case to discuss)
+- [x] use case scenario for hireachy structure
   - [x] kube MEC meeting
-- [ ] centralized controls over de-centralized control
+- [x] centralized controls over de-centralized control
 - [x] schedule meeting with Deepak about network and security
 
+
+## 03/18
+
+### Agenda
+- hireachy model & use cases
+- cluster connector demo
+- multi-tenancy EdgeCluster
+- EdgeCluster provisioning model
+- EdgeCluster components initial thoughts (cut short due to time limit)
+
+### Notes
+- EdgeCluster as first release goal
+- VPC in EdgeCluster needs further looked into
