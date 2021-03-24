@@ -105,8 +105,12 @@
 ## 03/24
 
 ### Agenda
-- Milestone setting
-- Design focus: POC
+- Scoping: 
+  - [virtual kubelet](https://virtual-kubelet.io/docs/architecture/)
+  - [Azure IoT deployment](https://azure.microsoft.com/en-us/blog/manage-azure-iot-edge-deployments-with-kubernetes/)
+  - [ioFog](https://iofog.org/docs/2/getting-started/core-concepts.html)
+- Milestone draft
+- Design focus: EdgeCluster upstream and downstream
 - Demo by Qian
 
 ### Notes
