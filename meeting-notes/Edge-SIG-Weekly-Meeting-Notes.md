@@ -101,3 +101,12 @@
 ### Notes
 - EdgeCluster as first release goal
 - VPC in EdgeCluster needs further looked into
+
+## 03/24
+
+### Agenda
+- Milestone setting
+- Design focus: POC
+- Demo by Qian
+
+### Notes
