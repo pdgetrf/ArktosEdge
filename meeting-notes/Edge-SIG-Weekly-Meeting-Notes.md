@@ -109,6 +109,9 @@
   - [virtual kubelet](https://virtual-kubelet.io/docs/architecture/)
   - [Azure IoT deployment](https://azure.microsoft.com/en-us/blog/manage-azure-iot-edge-deployments-with-kubernetes/)
   - [ioFog](https://iofog.org/docs/2/getting-started/core-concepts.html)
+  - Federation & [cluster registry](https://github.com/kubernetes/cluster-registry)
+  - Networking NFV, SDN, K8s networking
+  - Cluster cascading
 - Milestone draft
 - Design focus: EdgeCluster upstream and downstream
 - Demo by Qian
