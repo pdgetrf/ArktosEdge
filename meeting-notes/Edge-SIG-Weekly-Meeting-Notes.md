@@ -117,3 +117,12 @@
 - Demo by Qian
 
 ### Notes
+argument between all resource connecting to cloud vs local inter-connected edge cluster
+
+## 03/31
+### Agenda
+- Feature Scoping summary
+- Settle the debate from last meeting (by showing them under a single framework)
+- AWS Outputs/Local Zones/Wavelength (and assumption of how they work)
+
+### Notes
