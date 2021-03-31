@@ -121,6 +121,8 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 
 ## 03/31
 ### Agenda
+- 4/27 interval SIG review
+- New KubeCon NA CFP deadline: [5/23](https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/cfp/)
 - Feature Scoping summary
 - Settle the debate from last meeting (by showing them under a single framework)
 - AWS Outputs/Local Zones/Wavelength (and assumption of how they work)
