@@ -130,3 +130,11 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 ### Notes
 - SOW plan (in a week or two)
 - Release in 5/30 or 6/30
+
+## 4/7
+### Agenda
+- POC design and progress
+
+
+### Notes
+
