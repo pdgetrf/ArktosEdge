@@ -136,6 +136,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 - POC design and progress
   - KubeEdge
   - OpenYurt 
+- KubeEdge MEC planning
 
 ### Notes
 
