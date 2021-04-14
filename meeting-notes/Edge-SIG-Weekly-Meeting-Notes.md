@@ -140,3 +140,14 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 
 ### Notes
 
+# 4/14
+### Agenda
+- Community meeting  
+- POC design and progress
+  - KubeEdge
+  - OpenYurt 
+- KubeEdge MEC topics
+
+### Notes
+
+
