@@ -149,5 +149,6 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 - KubeEdge MEC topics
 
 ### Notes
-
+- POC 
+- Vision doc
 
