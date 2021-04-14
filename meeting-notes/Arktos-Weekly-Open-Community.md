@@ -1,6 +1,7 @@
 ### Agenda/goal:
 
-- Edge Design review
+- Edge design review
 - Feedback gathering
 
 ### Notes:
+- KubeEdge community meeting
