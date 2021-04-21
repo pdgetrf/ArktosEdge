@@ -166,11 +166,14 @@ argument between all resource connecting to cloud vs local inter-connected edge 
     - Top down route: Add CRDs to cluster
     - Bottown up route: Extend edged to accept and forward mission (workload) request to Arktos
 - KubeEdge community meeting study
-   - Edge cluster 
+   - Edge cluster
    - AKE (support kubectl on edge node)
 - Inter-edgecluster communication
 - VR MEC demo by AWS Wavelength
 - KubeEdge MEC topics
 
 ### Notes
-
+1. inter-EdgeCluster 
+2. SOW draft
+3. Schedule meeting to sync with KubeEdge meeting
+4. 07/30 first release, 05/31 design deadline
