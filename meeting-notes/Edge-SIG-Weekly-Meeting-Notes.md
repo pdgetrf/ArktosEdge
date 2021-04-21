@@ -152,3 +152,25 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 - POC 
 - Vision doc
 
+
+# 4/21
+### Agenda
+- Design Communication
+  - Team demo by Qian
+  - Discussion with Liguang
+  - TSC meeting on 27th (what to bring?)
+- POC 
+  - Dev env setup
+  - Merge KubeEdge with Arktos
+  - Add edge cluster support
+    - Top down route: Add CRDs to cluster
+    - Bottown up route: Extend edged to accept and forward mission (workload) request to Arktos
+- KubeEdge community meeting study
+   - Edge cluster 
+   - AKE (support kubectl on edge node)
+- Inter-edgecluster communication
+- VR MEC demo by AWS Wavelength
+- KubeEdge MEC topics
+
+### Notes
+
