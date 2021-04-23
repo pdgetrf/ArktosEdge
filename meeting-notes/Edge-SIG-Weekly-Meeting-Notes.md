@@ -177,3 +177,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 2. SOW draft
 3. Schedule meeting to sync with KubeEdge meeting
 4. 07/31 first release, 05/31 design deadline
+
+# 4/28
+### Agenda
+- 
