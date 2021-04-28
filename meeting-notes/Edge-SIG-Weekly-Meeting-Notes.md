@@ -1,4 +1,4 @@
-# Centaurus - Edge+AI SIG Weekly Meeting
+# Centaurus - Edge + SIG Weekly Meeting
 - Wednesday 3:00 - 4:00 PM
 - [ZOOM](https://futurewei.zoom.us/j/93051877352?from=addon)
 
@@ -180,4 +180,5 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 
 # 4/28
 ### Agenda
-- 
+- POC progress
+- Global Scheduling handoff
