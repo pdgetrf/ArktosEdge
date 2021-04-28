@@ -180,5 +180,5 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 
 # 4/28
 ### Agenda
-- POC progress
-- Global Scheduling handoff
+- POC progress update
+- Global Scheduling project handoff
