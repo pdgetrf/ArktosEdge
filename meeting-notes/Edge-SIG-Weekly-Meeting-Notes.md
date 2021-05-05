@@ -191,7 +191,11 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 
 - POC progress update
   - cascading cluster demo by Qian
-  - Status reporting POC plan 
+    - client-go vs kubectl
+  - Status reporting POC plan
+- SOW ideas
+  - client-go
+  - cluster/workload status update
 - Global scheduling for the Edge
 - MEC status
 
