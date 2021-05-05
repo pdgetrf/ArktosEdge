@@ -206,12 +206,4 @@ argument between all resource connecting to cloud vs local inter-connected edge 
   - Thursday night: KubeEdge, KubeEdge MEC
   - Monday night: Global Scheduler (move to Tursday Arktos community meeting?)
 
-Monday & Wednesday: Edge scrum
-
-Tuesday night: Arktos community
-
-Wednesday afternoon: Edge SIG
-
-Thursday night: KubeEdge, KubeEdge MEC
-
 
