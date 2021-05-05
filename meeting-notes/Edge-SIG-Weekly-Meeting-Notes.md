@@ -183,3 +183,16 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 - Overall progress review
 - POC progress update
 - Global Scheduling project handoff
+
+# 5/5
+### Agenda
+- Overall progress review
+- Global Scheduling project handoff
+
+- POC progress update
+  - cascading cluster demo by Qian
+  - Status reporting POC plan 
+- Global scheduling for the Edge
+- MEC status
+
+
