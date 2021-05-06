@@ -198,7 +198,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
   - cluster/workload status update
 - Global scheduling for the Edge
 - MEC status
-- Meeting consolidatio
+- Meeting consolidation
   - Monday night: Global Scheduler
   - Monday & Wednesday: Edge scrum
   - Tuesday night: Arktos community
