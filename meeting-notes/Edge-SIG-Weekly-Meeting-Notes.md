@@ -208,6 +208,11 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 # 5/12
 ### Agenda
 - Overall progress review
-- Global Scheduling project handoff
+- Global Scheduler project
+- POC focus
+  - Edge cluster status
+  - inter Edge cluster comm
+  - Self-organizing cluster
+  - Scheduler enhancement
 - Edge cluster status update design
-
+- MEC
