@@ -205,3 +205,9 @@ argument between all resource connecting to cloud vs local inter-connected edge 
   - Wednesday afternoon: Edge SIG
   - Thursday night: KubeEdge, KubeEdge MEC
 
+# 5/12
+### Agenda
+- Overall progress review
+- Global Scheduling project handoff
+- Edge cluster status update design
+
