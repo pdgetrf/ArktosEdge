@@ -216,3 +216,13 @@ argument between all resource connecting to cloud vs local inter-connected edge 
   - Scheduler enhancement
 - Edge cluster status update design
 - MEC
+
+### Note
+- Deployment vs Mission
+- Status needs to be stored on top layers
+- First release scope (2 layers)
+- Cluster status in 2nd release
+- Workload status in 1st release. Periodic update first. 
+
+
+
