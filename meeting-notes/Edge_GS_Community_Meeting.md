@@ -1,5 +1,5 @@
-# Centaurus - Edge + Global Scheduler Weekly Meeting
-- Monday 6:00 - 8:00 PM
+# Centaurus - Edge + Global Scheduler Community Meeting
+- Weekly, Monday 6:00 - 8:00 PM
 - [ZOOM](https://futurewei.zoom.us/j/95137875506?from=addon)
 
 
