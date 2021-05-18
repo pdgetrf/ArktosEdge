@@ -14,3 +14,10 @@
   - Workload status reporting
   - Inter-cluster communication
   - Self-organizing edge cluster
+
+### Notes:
+
+- K8s & Arktos cluster support --> GS in next GS release
+- Edge cluster status reporting requirement, use case
+  - cluster size & level limitation
+  - connection breaks and resumes, perf test
