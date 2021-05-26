@@ -245,3 +245,21 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 ### Note
 
 
+# 5/26
+### Agenda
+- Overall progress review
+- POC
+  - [x] Cascading cluster
+  - [x] Edge cluster status
+  - [ ] inter Edge cluster comm
+  - [ ] Edge core refactor into edge agent (working with KubeEdge)
+  - [ ] Self-organizing cluster
+  - [ ] Scheduler enhancement
+- Demo & Perf
+  - [ ] Edge application to showcase POC
+- Publication
+  - [x] KubeCon (due by 5/23)
+  - [ ] Open Networking & Edge Summit + Kubernetes on Edge Day ([Due by 6/20](https://events.linuxfoundation.org/open-networking-edge-summit-north-america/program/cfp/))
+
+### Note
+
