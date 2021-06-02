@@ -276,6 +276,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
     - Application load balancer
   - [ ] Self-organizing cluster (Eunju)
   - [ ] Env setup doc
+  - [ ] Slack edge-dev channel
   - [ ] Edge core refactor into edge agent (working with KubeEdge)
   - [ ] Scheduler enhancement
 - Publication
