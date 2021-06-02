@@ -2,8 +2,9 @@
 
 ## Scenarios
 
-
-
+- IoT
+- Smart Factory
+- MEC
 
 ## Requirements
 
@@ -18,13 +19,15 @@ Tolerance to
 
 ## Existing Solutions
 
+- IoT
+- Smart Factory
+- MEC
 
 ## Models
 
 ### Single-layer vs Hierarchy
 
 ### Layered and Hierarchical Topology
-
 
 ## Key Features
 
@@ -33,6 +36,8 @@ Tolerance to
 ### Flexible Edge Cluster Structure
 
 #### Cascading Cluster
+
+#### Attachment vs Self-Organizing
 
 #### Workload Assignment
 
@@ -44,6 +49,6 @@ Tolerance to
 
 ### Modular Edge Agents
 
-## Proof Of Concepts
+## Proof Of Concept
 
 
