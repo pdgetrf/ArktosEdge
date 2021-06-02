@@ -37,6 +37,8 @@ Tolerance to
 
 #### Cascading Cluster
 
+#### Supporting Multiple K8s Flavors
+
 #### Attachment vs Self-Organizing
 
 #### Workload Assignment
@@ -51,4 +53,11 @@ Tolerance to
 
 ## Proof Of Concept
 
+### Edge Cluser
+
+### Cascading
+
+### Status Reporting
+
+### Flavor supports
 
