@@ -3,19 +3,34 @@
 ## Scenarios
 
 
+
+
 ## Requirements
+
+Tolerance to 
+
+1. Network Disconnect
+
+2. Edge Node Failutre
+
+3. Both 1. and 2. Simultaneously 
 
 
 ## Existing Solutions
 
 
-## Edge Modeling
+## Models
+
+### Single-layer vs Hierarchy
+
+### Layered and Hierarchical Topology
+
 
 ## Key Features
 
 ### Robust Edge Clusters
 
-### Flexible Edge Cluster Topology
+### Flexible Edge Cluster Structure
 
 #### Cascading Cluster
 
@@ -26,6 +41,8 @@
 ### Inter-cluster Communication
 
 ### Autoumous Cluster Provisioning
+
+### Modular Edge Agents
 
 ## Proof Of Concepts
 
