@@ -286,7 +286,9 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 - Demo & Perf
   - [ ] Edge application to showcase POC
 - MEC
-  - Dev & Release plan
+  - Dev & Release plan 
+    - Akrano demo 8/26
 
 ### Note
+- 
 
