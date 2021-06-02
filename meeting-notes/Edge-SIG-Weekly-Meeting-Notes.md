@@ -266,19 +266,26 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 
 # 6/2
 ### Agenda
-- Overall progress review
+- Edge Status
   - [x] Cascading cluster
   - [x] Edge cluster status
   - [ ] inter Edge cluster comm (Qian, Shaojun)
+    - Mizar setup
+    - Zeta
+    - [libp2p](https://libp2p.io)
+    - Application load balancer
   - [ ] Self-organizing cluster (Eunju)
+  - [ ] Env setup doc
   - [ ] Edge core refactor into edge agent (working with KubeEdge)
   - [ ] Scheduler enhancement
-- Demo & Perf
-  - [ ] Edge application to showcase POC
 - Publication
   - [x] KubeCon (due by 5/23)
   - [ ] Open Networking & Edge Summit + Kubernetes on Edge Day ([Due by 6/20](https://events.linuxfoundation.org/open-networking-edge-summit-north-america/program/cfp/))
   - [ ] Design doc (due by 6/4, Peng & Qian) 
+- Demo & Perf
+  - [ ] Edge application to showcase POC
+- MEC
+  - Dev & Release plan
 
 ### Note
 
