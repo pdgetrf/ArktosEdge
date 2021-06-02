@@ -1,6 +1,6 @@
 # Centaurus Edge Design
 
-## Scenario
+## Scenarios
 
 
 ## Requirements
