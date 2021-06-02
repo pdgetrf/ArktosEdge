@@ -275,7 +275,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
     - [libp2p](https://libp2p.io)
     - Application load balancer
   - [ ] Self-organizing cluster (Eunju)
-  - [ ] Env setup doc
+  - [ ] Env setup doc, repository, CICD, etc.
   - [ ] Slack edge-dev channel
   - [ ] Edge core refactor into edge agent (working with KubeEdge)
   - [ ] Scheduler enhancement
