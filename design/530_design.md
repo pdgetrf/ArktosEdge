@@ -113,7 +113,7 @@ From an edge cluster's own perspective, it operates as usual by watching its etc
 From Centaurus's perspective, all edge nodes and clusters are connected in a cascading (or layered, hierarchical) structure with the help of the following components.
 
 ### Robust Edge Clusters
-Derived from KubeEdge's Cloud Core and Cloud Edge concept, an "Edge Agent" is installed on each edge node. This edge agent is responsible for managing communication with the upper level control plane and caching information in a local database (e.g. SQLite). 
+Derived from KubeEdge's Cloud Core and Cloud Edge concepts, an "Edge Agent" is installed on each edge node. This edge agent is responsible for managing communication with the upper level control plane, caching information in a local database (e.g. SQLite), and distributing message to lower level entites on the same node. In addition to the Edged found in KubeEdge, a new controller called EdgeClusterd is introduced. While Edged relays and manages workloads on the edge node. The edge agent is what's providing robustness to edge workloads against network disconnect. The connection between Edge Hub and Cloud Hub is stillimplemented using WebSocket. Watch is not used because network fluctuation could cause frequent List operations which could consume large network capacity. Optionally, edge cluster could watch upper clusters if network is reliable between them.
 
 ### Flexible Edge Cluster Structure
 
