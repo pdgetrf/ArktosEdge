@@ -82,9 +82,16 @@ The following graph is an example of such edge model.
      alt="centaurus edge model"
      width="50%" />
 
-### Single-layer vs Hierarchy
+The m-ary tree model satisfies all four previously mentioned requirements. Each edge node is deployed with an "edge agent" component that maintains connection with control plane, runs Arktos workload, and caching messages from and to the control plane. It's worth noting that "control plane" here is not necessarily the Arktos in the cloud. It refers to the control plane which the current node connects to. 
 
-### Layered and Hierarchical Topology
+When network disconnects, workload continues running (condition 1). When a worker node in the edge cluster dies, its workloads could be migrated to other nodes in the same cluster (condition 2). And because of the control plane operates locally with the worker nodes, condition 3 can also be achieved. 
+
+Being a tree structure, the layered and hierarchy nature of edge site topology can be expressed with great flexibility. Depending on use cases, edge environments could have vastely differnt requirements and restriction. The design of Centaurus edge strives to leave the choice to users by offering a flexible framework. As an example, The following graph shows two possible modes that edge clusters can be structured. Each triangle represents an cluster. Mode 1 is a "flat" structure where each edge cluster directly connects to the cloud control plane. This structure, similar to federation, could benefit the case where clusters are managed centrally from the cloud, and each cluster has network connectivity to the cloud via public internet. In comparison, in mode 2, edge clusters are locally connected in a hierarchy, and only a certain edge clusters are connect to the cloud. This mode maps more closely to scenarios where multiple edge clusters are managed from within an on-prem network boundary. Local management is available even when connection to the cloud is lost whereas in mode 1, user control relies on internet connection being accessible between the cloud and edge clusters.  
+
+<img src="images/layered-vs-flat.png"
+     alt="centaurus edge model"
+     width="70%" />
+
 
 ## Key Features
 
