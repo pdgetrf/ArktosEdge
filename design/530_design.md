@@ -25,8 +25,12 @@ Edge computing environments have the following key differences comparing to the 
 - Unstable network connection
 
 - Smaller or no dev-ops teams
+
+- Complex site topology
  
 ## Design Principles
+
+### Robustness
 
 Centaurus edge addresses the requirements by allowing workloads on the edge to continue functioning with tolerance to the following conditions: 
 
@@ -36,7 +40,11 @@ Centaurus edge addresses the requirements by allowing workloads on the edge to c
 
 3. Both 1. and 2. happen Simultaneously 
 
-Altogether, Centaurus edge is designed to run applications with the best effort against environment fluctuation and uncertainties. 
+Altogether, the 3 requirements are provided to run applications with the best effort against environment fluctuation and uncertainties.
+
+### Flexible Topology
+
+In additoin, observing that edge environments could have multiple layers and hierarchies following either locality or logical distribution, Centaurus edge is designed to allow hierarchical construction of edge cluster topology for flexibile configurability.
 
 ## Existing Solutions
 
@@ -48,8 +56,9 @@ These solutions provide functions to manage computing nodes running on the edge 
 - [OpenYurt](https://github.com/openyurtio/openyurt)
 - [SuperEdge](https://github.com/superedge/superedge)
 - [BAETYL](https://github.com/baetyl/baetyl)
+- [Virtual Kubelet](https://virtual-kubelet.io/)
 
-THese solutions meet condition 1 of the design principles.  
+These solutions meet condition 1 of the design principles.  
 
 ### Edge cluster 
 
@@ -61,8 +70,7 @@ These solutions have the control plane including apiserver, controllers and sche
 - [Cluster-registry](https://github.com/kubernetes-retired/cluster-registry), retired
 - [Namespace Sameness](https://github.com/kubernetes/community/blob/master/sig-multicluster/namespace-sameness-position-statement.md)
 
-
-
+These solutions meet condition 2 of the design principles.
 
 ## Models
 
