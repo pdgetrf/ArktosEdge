@@ -100,8 +100,20 @@ Mode 1 and 2 are two extremes of what the Centaurus edge model expressability. I
 
 This section details the design of key components to implement the Centaurus edge model.
 
+### Edge Cluster
+Centaurus edge supports a variety of "K8s" flavors running as edge clusters. This includes "vanilla" K8s, [k3s](https://k3s.io/), and Arktos. The following figure details the components of an edge cluster. 
+
+<img src="images/edge-cluster-components.png"
+     alt="centaurus edge model"
+     width="50%" 
+     align="center"/>
+
+From an edge cluster's own perspective, it operates as usual by watching its etcd and managing its workload. It's not aware of itself being anything different than a K8s cluster running in the cloud.
+
+From Centaurus's perspective, all edge nodes and clusters are connected in a cascading (or layered, hierarchical) structure with the help of the following components.
 
 ### Robust Edge Clusters
+Derived from KubeEdge's Cloud Core and Cloud Edge concept, an "Edge Agent" is installed on each edge node. This edge agent is responsible for managing communication with the upper level control plane and caching information in a local database (e.g. SQLite). 
 
 ### Flexible Edge Cluster Structure
 
