@@ -74,7 +74,7 @@ These solutions meet condition 2 of the design principles.
 
 ## Models
 
-The Centaurus Edge architecture is modeled as an m-ary tree where an [Arktos](https://github.com/CentaurusInfra/arktos) control plane sits at the root of the tree in the cloud, and leaf tree nodes represent computing nodes on the edge. The sub-trees in the m-ary tree are standalone clusters, and the roots of the sub-trees are control planes for edge clusters. As usual with Arktos clusters, there are also compute nodes in the cloud managed by the root level Arktos control plane.
+The Centaurus Edge architecture is modeled as an [m-ary tree](https://en.wikipedia.org/wiki/M-ary_tree) where an [Arktos](https://github.com/CentaurusInfra/arktos) control plane sits at the root of the tree in the cloud, and leaf tree nodes represent computing nodes on the edge. The sub-trees in the m-ary tree are standalone clusters, and the roots of the sub-trees are control planes for edge clusters. As usual with Arktos clusters, there are also compute nodes in the cloud managed by the root level Arktos control plane.
 
 The following graph is an example of such edge model.
 
@@ -93,6 +93,8 @@ Being a tree structure, the layered and hierarchy nature of edge site topology c
      alt="centaurus edge model"
      width="70%" 
      align="center"/>
+
+Mode 1 and 2 are two extremes of what the Centaurus edge model expressability. In between are various possiblities of combination, and the choice is in the hands of user. This kind of flexibility allows edge clusters to be structured to match as close as possible to the physical or logical model of edge application.
 
 ## Key Features
 
