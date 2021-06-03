@@ -96,7 +96,10 @@ Being a tree structure, the layered and hierarchy nature of edge site topology c
 
 Mode 1 and 2 are two extremes of what the Centaurus edge model expressability. In between are various possiblities of combination, and the choice is in the hands of user. This kind of flexibility allows edge clusters to be structured to match as close as possible to the physical or logical model of edge application.
 
-## Key Features
+## Key Feature Design
+
+This section details the design of key components to implement the Centaurus edge model.
+
 
 ### Robust Edge Clusters
 
