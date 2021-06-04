@@ -79,7 +79,6 @@ The Centaurus Edge architecture is modeled as an [m-ary tree](https://en.wikiped
 The following graph is an example of such edge model.
 
 <img src="images/centaurus-edge-model.png"
-     alt="centaurus edge model"
      width="50%"
      align="center"/>
 
@@ -90,7 +89,6 @@ When network disconnects, workload continues running (condition 1). When a worke
 Being a tree structure, the layered and hierarchy nature of edge site topology can be expressed with great flexibility. Depending on use cases, edge environments could have vastely differnt requirements and restriction. The design of Centaurus edge strives to leave the choice to users by offering a flexible framework. As an example, The following graph shows two possible modes that edge clusters can be structured. Each triangle represents an cluster. Mode 1 is a "flat" structure where each edge cluster directly connects to the cloud control plane. This structure, similar to federation, could benefit the case where clusters are managed centrally from the cloud, and each cluster has network connectivity to the cloud via public internet. In comparison, in mode 2, edge clusters are locally connected in a hierarchy, and only a certain edge clusters are connect to the cloud. This mode maps more closely to scenarios where multiple edge clusters are managed from within an on-prem network boundary. Local management is available even when connection to the cloud is lost whereas in mode 1, user control relies on internet connection being accessible between the cloud and edge clusters.  
 
 <img src="images/layered-vs-flat.png"
-     alt="centaurus edge model"
      width="70%" 
      align="center"/>
 
@@ -104,7 +102,6 @@ This section details the design of key components to implement the Centaurus edg
 Centaurus edge supports a variety of "K8s" flavors running as edge clusters. This includes "vanilla" K8s, [k3s](https://k3s.io/), and Arktos. The following figure details the components of an edge cluster. 
 
 <img src="images/edge-cluster-components.png"
-     alt="centaurus edge model"
      width="50%" 
      align="center"/>
 
@@ -147,7 +144,6 @@ type EdgeClusterStatus struct {
 The Cloud Core and Edge Agent bind two clusters together. In KubeEdge, Cloud Core is only deployed in the edge as the name suggested. However, it can be extended for cascading clusters on the edge too, as shown in the following figure:
 
 <img src="images/cascaded-cluster.png"
-     alt="centaurus edge model"
      width="60%" 
      align="center"/>
 
@@ -156,26 +152,61 @@ In the control plane of an edge cluster, the Cloud Core component is activated t
 ### Supporting Multiple K8s Flavors
 Edge clusters can be running different flavors of K8s. For the EdgeClusterd to be able to communicate with a variety of K8s cluster control planes, KubeClient compatibility has to be resolved. For example, the KubeClient in Arktos has been extended to carry tenant information. Using this to watch a vanilla K8s apiserver will cause errors. Same vice versa. As a quick solution, the commandline kubectl binary can be used instead. This kubectl is provided by the subordinate cluster and therefore guarentees compatibility. More comprehensive solution would involve modifying KubeClient and this will be further investigated in later release cycles. 
 
+### Workload Assignment
+With single edge node, workload usually refers to a single pod and virtual machine if it's supported. For a cluster, it is extended to objects such as deployment, job, statefulset, etc. In the Centaurus edge clusters, "workload" is used to refer to both cases. Because of the hierarchical nature of edge structure, workloads need to navigate to the destined nodes or clusters by traversing the tree structure, and this is called workload assignment. 
+
+There are two implementation options for workload assignment. The first option is "invasive" to existing K8s implementation. It uses labels inside workload objects to specify the rules for targeted destination. This method uses standard K8s object definitions, and therefore allows existing workload specifications (e.g. a yaml file for a deployment) to be used. However, controllers for the supported object types need to be changed accordingly.
+
+The second option is less "invasive" by packing the workload object inside another object implemented by CRD. No changes are needed for existing controllers. The CRD is handled by a controller which receives, propagates, and delivers to the destined clusters. This method, however, requires creating new CRD definitions from existing workload specifications, although this could potentially be automated with the least user intervention. The following is an example of this option:
+
+```golang
+type Mission struct {
+	metav1.TypeMeta `json:",inline"`
+	// +optional
+	metav1.ObjectMeta `json:"metadata,omitempty"`
+	Spec MissionSpec `json:"spec"`
+	State map[string]string `json:"state,omitempty"`
+}
+
+type MissionSpec struct {
+	Content string `json:"content,omitempty"`
+	Placement GenericPlacementFields `json:"placement,omitempty"`
+	StateCheck StateCheckFields `json:"statecheck"`
+}
+
+type GenericClusterReference struct {
+	Name string `json:"name"`
+}
+
+type GenericPlacementFields struct {
+	Clusters    []GenericClusterReference `json:"clusters,omitempty"`
+	MatchLabels map[string]string         `json:"matchlabels,omitempty"`
+}
+```
+
+Here a CRD called "Mission" is used to store the actual workload definition (Mission/MissionSpec/Content) and destination information (Mission/MissionSpec/Placement). The following figure illustrates the flow of CRD propagation. A CRD object envoloping workload definition is created in a cluster (cloud or edge), and it is picked up by the cloud core component which watches this CRD. This CRD is in turn propagated to the edge agents based on the destination criterias defined in *Placement*. Edge agent examines the CRD, unwrap the workload specification and insert into the edge cluster if location criterias are met. In the meantime, the cloud core in the current cluster will also picked up CRD and perform propagation in the same fashion.   
+
+<img src="images/workload-assignment.png"
+     width="65%" 
+     align="center"/>
+
+In the above figures, the mission (yello envolop) is propagated through step 1 to 4 and eventually reaches the targeted edge cluster. This method allows workload to be distributed to multiple edge clusters based on placement rules customizable by user. 
+
+### Status Reporting
+
 ### Attachment vs Self-Organizing
 
 The tree structure of the Centaurus edge allows clusters on the edge to join as a sub-tree, and this approach is called "attachment", shown in the right side of the following figure. This usually applies to the scenarios where a cluster is already provisioned and running. By "attaching" to an existing edge tree, it will be able to take workloads together with other clusters in the same tree, hence forming a co-op topology.  
 
-In addition to "attachment", a second option is to allow Centaurus edge framework to group a set of edge nodes into a cluster based on a certain criterias. For example, as shown on the left of the following figure, user has a set of edge nodes (light blue, yellow, green and darker blue). These nodes are then selected (either by user's manual inputs or automatically chosen) to be converted and grouped together into an edge cluster. This approach has multiple benefits. Firstly, user is freed from managing cluster operation, and secondly, cluster node selection can be automated based on workload resource requirement and compute resource availablility. This will be further investigated in later release cycles.
-
 <img src="images/grouping-vs-attachment.png"
-     alt="centaurus edge model"
      width="65%" 
      align="center"/>
 
-#### Workload Assignment
-
-#### Status Reporting
+In addition to "attachment", a second option is to allow Centaurus edge framework to group a set of edge nodes into a cluster based on a certain criterias. For example, as shown on the left of the above figure, user has a set of edge nodes (light blue, yellow, green and darker blue). These nodes are then selected (either by user's manual inputs or automatically chosen) to be converted and grouped together into an edge cluster. This approach has multiple benefits. Firstly, user is freed from managing cluster operation, and secondly, cluster node selection can be automated based on workload resource requirement and compute resource availablility. This will be further investigated in later release cycles.
 
 ### Inter-cluster Communication
 
 ### Autoumous Cluster Provisioning
-
-### Modular Edge Agents
 
 ## Proof Of Concept
 
