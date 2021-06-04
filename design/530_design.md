@@ -192,7 +192,44 @@ Here a CRD called "Mission" is used to store the actual workload definition (Mis
 
 In the above figures, the mission (yello envolop) is propagated through step 1 to 4 and eventually reaches the targeted edge cluster. This method allows workload to be distributed to multiple edge clusters based on placement rules customizable by user. 
 
-### Status Reporting
+### Workload Status Reporting
+The hierarchy nature of edge structure demands cluster and workload status in each layer to be relayed upward to the top level control plane. Two components are added for the status reporting, as shown in green in the following figure:
+
+<img src="images/status-update-component.png"
+     width="50%" 
+     align="center"/>
+
+Based on the *Mission*, the status manager in EdgeClusterd periodically obtains the workload status from the subordinate cluster, and updates the *State* in the *Mission* object, which in turn is relayed to the upper level Cloud Core where the status is aggregrated and updated into the etcd in that cluster's etcd. This action will trigger further updates following the same mechanism.
+
+There are two kinds of status to be reported:
+
+#### 1. Workload Status
+The *Mission* CRD is used to carry workload information through edge cluster layers, and therefore workload information is stored as a part of the *[Mission/State]* definition called "State":
+
+```golang
+type Mission struct {
+	...
+	...
+	State map[string]string `json:"state,omitempty"`
+}
+``` 
+Each *Mission* can be deployed to multiple clusters, so the status is a collection of all workloads from the same *Mission*. The key to the *State* map is based on indivisual cluster (e.g. cluster name). 
+
+#### 2. EdgeCluster Status
+For edge cluster status, reporting is carried out in "heart beat" fashion, similar to the node status update in "vanilla" K8s. Edge cluster status includes the health of the cluster and states of workloads running on it, defined as:
+
+```golang
+type EdgeClusterStatus struct {
+	Healthy bool `json:"healthy,omitempty"`
+	EdgeClusters []string `json:"edgeclusters,omitempty"`
+	Nodes []string `json:"nodes,omitempty"`
+	EdgeNodes []string `json:"edgenodes,omitempty"`
+	ReceivedMissions []string `json:"receivedmissions,omitempty"`
+	ActiveMissions []string `json:"activemissions,omitempty"`
+	LastHeartBeat metav1.Time `json:"lastheartbeat,omitempty"`
+}
+``` 
+Similar to the workload status, edge cluster status is also relayed to upper layers trough the hierarchy.
 
 ### Attachment vs Self-Organizing
 
@@ -205,16 +242,4 @@ The tree structure of the Centaurus edge allows clusters on the edge to join as 
 In addition to "attachment", a second option is to allow Centaurus edge framework to group a set of edge nodes into a cluster based on a certain criterias. For example, as shown on the left of the above figure, user has a set of edge nodes (light blue, yellow, green and darker blue). These nodes are then selected (either by user's manual inputs or automatically chosen) to be converted and grouped together into an edge cluster. This approach has multiple benefits. Firstly, user is freed from managing cluster operation, and secondly, cluster node selection can be automated based on workload resource requirement and compute resource availablility. This will be further investigated in later release cycles.
 
 ### Inter-cluster Communication
-
-### Autoumous Cluster Provisioning
-
-## Proof Of Concept
-
-### Edge Cluser
-
-### Cascading
-
-### Status Reporting
-
-### Flavor supports
 
