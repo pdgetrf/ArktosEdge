@@ -115,9 +115,44 @@ From Centaurus's perspective, all edge nodes and clusters are connected in a cas
 ### Robust Edge Clusters
 Derived from KubeEdge's Cloud Core and Cloud Edge concepts, an "Edge Agent" is installed on each edge node. This edge agent is responsible for managing communication with the upper level control plane, caching information in a local database (e.g. SQLite), and distributing message to lower level entites on the same node. In addition to the Edged found in KubeEdge, a new controller called EdgeClusterd is introduced. While Edged relays and manages workloads on the edge node. The edge agent is what's providing robustness to edge workloads against network disconnect. The connection between Edge Hub and Cloud Hub is stillimplemented using WebSocket. Watch is not used because network fluctuation could cause frequent List operations which could consume large network capacity. Optionally, edge cluster could watch upper clusters if network is reliable between them.
 
-### Flexible Edge Cluster Structure
+### Cascaded Edge Clusters 
+With Cloud Core and Edge Agent as the connect mechanism, an edge cluster can be connected into a higher level cluster. To express such relationshio in K8s, a new object called EdgeCluster is introduced:
 
-#### Cascading Cluster
+```golang
+type EdgeCluster struct {
+	metav1.TypeMeta `json:",inline"`
+	// +optional
+	metav1.ObjectMeta `json:"metadata,omitempty"`
+	// Spec defines desired state of network
+	// +optional
+	Spec EdgeClusterSpec `json:"spec"`
+	Status EdgeClusterStatus `json:"status,omitempty"`
+} 
+```
+
+The EdgeCluster object is similar to the Node object in terms of the level of abstraction. An EdgeCluster object is created for each edge cluster. This new abstraction allows the expression of a group of edge clusters connected in a tree structure. Each edge cluster, just like a regular K8s clusters, maintains its pool of nodes. Furthermore, it also maintains an array of subordinate clusters that connect to it. The state of each subordinate edge clusters are stored in the EdgeClusterStatus struct:
+
+```golang
+type EdgeClusterStatus struct {
+	EdgeClusters []string `json:"edgeclusters,omitempty"`	// subordinate clusters
+	Healthy bool `json:"healthy,omitempty"`
+	Nodes []string `json:"nodes,omitempty"`
+	EdgeNodes []string `json:"edgenodes,omitempty"`
+	ReceivedMissions []string `json:"receivedmissions,omitempty"`
+	ActiveMissions []string `json:"activemissions,omitempty"`
+	LastHeartBeat metav1.Time `json:"lastheartbeat,omitempty"`
+}
+```
+
+The Cloud Core and Edge Agent bind two clusters together. In KubeEdge, Cloud Core is only deployed in the edge as the name suggested. However, it can be extended for cascading clusters on the edge too, as shown in the following figure:
+
+<img src="images/cascaded-cluster.png"
+     alt="centaurus edge model"
+     width="60%" 
+     align="center"/>
+
+In the control plane of an edge cluster, the Cloud Core component is activated to connect to its own subordinate edge nodes and edge clusters, and the EdgeCluster objects are also created in this edge clusters to represent those subordinate edge clusters.  
+
 
 #### Supporting Multiple K8s Flavors
 
