@@ -54,7 +54,7 @@ These solutions provide functions to manage computing nodes running on the edge 
 
 These solutions meet condition 1 of the design principles.  
 
-### Edge cluster 
+### Edge Cluster 
 
 These solutions have the control plane including apiserver, controllers and scheduler in the edge sites. The existing solutions includes:
 
