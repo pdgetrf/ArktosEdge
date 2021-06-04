@@ -242,4 +242,11 @@ The tree structure of the Centaurus edge allows clusters on the edge to join as 
 In addition to "attachment", a second option is to allow Centaurus edge framework to group a set of edge nodes into a cluster based on a certain criterias. For example, as shown on the left of the above figure, user has a set of edge nodes (light blue, yellow, green and darker blue). These nodes are then selected (either by user's manual inputs or automatically chosen) to be converted and grouped together into an edge cluster. This approach has multiple benefits. Firstly, user is freed from managing cluster operation, and secondly, cluster node selection can be automated based on workload resource requirement and compute resource availablility. This will be further investigated in later release cycles.
 
 ### Inter-cluster Communication
+For some user scheduler such as MEC, it is benefitial if edge clusters at different locations could communication with each other without going through the central cloud. The following figure is an example. Two pods in the same VPC 1 could be disributed into two different clusters. The goal is to allow communication between these two pods without routing through the cloud.  
 
+<img src="images/inter-cluster-comm.png"
+     width="65%" 
+     align="center"/>
+
+
+This part is still undergoing research and will be updated soon.
