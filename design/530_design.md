@@ -19,13 +19,9 @@ The prosperity of cloud technologies, 5G and AI brings vast opportunities for ed
 Edge computing environments have the following key differences comparing to the cloud environments:
 
 - Low computing power
-
 - Low energy suply and consumption
-
 - Unstable network connection
-
 - Smaller or no dev-ops teams
-
 - Complex site topology
  
 ## Design Principles
@@ -35,9 +31,7 @@ Edge computing environments have the following key differences comparing to the 
 Centaurus edge addresses the requirements by allowing workloads on the edge to continue functioning with tolerance to the following conditions: 
 
 1. Network disconnect
-
 2. Edge node failure 
-
 3. Both 1. and 2. happen Simultaneously 
 
 Altogether, the 3 requirements are provided to run applications with the best effort against environment fluctuation and uncertainties.
