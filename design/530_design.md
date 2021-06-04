@@ -153,10 +153,19 @@ The Cloud Core and Edge Agent bind two clusters together. In KubeEdge, Cloud Cor
 
 In the control plane of an edge cluster, the Cloud Core component is activated to connect to its own subordinate edge nodes and edge clusters, and the EdgeCluster objects are also created in this edge clusters to represent those subordinate edge clusters.  
 
+### Supporting Multiple K8s Flavors
+Edge clusters can be running different flavors of K8s. For the EdgeClusterd to be able to communicate with a variety of K8s cluster control planes, KubeClient compatibility has to be resolved. For example, the KubeClient in Arktos has been extended to carry tenant information. Using this to watch a vanilla K8s apiserver will cause errors. Same vice versa. As a quick solution, the commandline kubectl binary can be used instead. This kubectl is provided by the subordinate cluster and therefore guarentees compatibility. More comprehensive solution would involve modifying KubeClient and this will be further investigated in later release cycles. 
 
-#### Supporting Multiple K8s Flavors
+### Attachment vs Self-Organizing
 
-#### Attachment vs Self-Organizing
+
+<img src="images/grouping-vs-attachment.png"
+     alt="centaurus edge model"
+     width="65%" 
+     align="center"/>
+
+
+
 
 #### Workload Assignment
 
