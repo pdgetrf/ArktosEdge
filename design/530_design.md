@@ -2,17 +2,17 @@
 
 ## Abstract
 The prosperity of cloud technologies, 5G and AI brings vast opportunities for edge computing where computation migrates from centralized data centers to on-prem, at-home, and remote areas. This document introduces a novel edge-computing framework design for Centaurus. Observing and honoring the requirements specific to edge environments, e.g. low latency, high survivability, and hierarchically distributed architecture, this design features 
-1. running clusters on the edge, alongside with edge nodes,
-2. flexible topologies where edge clusters are connected in multi-layer tree-like structures 
-3. flexible flavored clusters on the edge, such as K8s and K3s, 
-4. inter-cluster communication capability and, 
-5. smart edge cluster formation. 
+1. unning clusters on the edge, alongside with edge nodes,
+2. Flexible topologies where edge clusters are connected in a multi-layer tree-like structure,
+3. Flexible flavored clusters on the edge, such as Arktos, K8s and K3s, 
+4. Direct inter-cluster communication without going through the central cloud, and, 
+5. Smart edge cluster formation. 
 
 ## Scenarios
 
 - IoT, where devices such as temperature sensors and surveillance cameras are connected to edge nodes.
-- Smart Factory, where cluster of nodes run on the edge site
-- Multi-access edge computing (MEC), where edge nodes and/or edge applications run on edge nodes or clusters places in or close to cellular network
+- Smart Factory, where cluster of nodes run on the edge site.
+- Multi-access edge computing (MEC), where edge applications run on edge nodes or clusters places in or close to the cellular network.
 
 ## Requirements 
 
@@ -22,7 +22,7 @@ Edge computing environments have the following key differences comparing to the 
 - Low energy suply and consumption
 - Unstable network connection
 - Smaller or no dev-ops teams
-- Complex site topology
+- Complex topology
 
 ## Design Principles
 
@@ -31,10 +31,10 @@ Edge computing environments have the following key differences comparing to the 
 Centaurus edge addresses the requirements by allowing workloads on the edge to continue functioning with tolerance to the following conditions: 
 
 1. Network disconnect
-2. Edge node failure 
+2. Edge node failure
 3. Both 1. and 2. happen Simultaneously 
 
-Altogether, the 3 requirements are provided to run applications with the best effort against environment fluctuation and uncertainties.
+Altogether, meeting the three requirements would allow applications to run on the edge with the best effort against environment fluctuation and node failures.
 
 ### Flexible Topology
 
