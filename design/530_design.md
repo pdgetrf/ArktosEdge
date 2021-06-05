@@ -48,7 +48,7 @@ Edge computer resources are usually deployed in 2+ layers, as shown in the follo
 
 ### IoT
 
-These solutions provide functions to manage computing nodes running on the edge environments. The control plane sits in the cloud, and an "agent" type of software components is deployed on the edges node to allow edge nodes to continue running when the network disconnects. Examples of such solutions includes:
+These solutions provide functions to manage computing nodes running on the edge environments. The control plane sits in the cloud, and an "agent" type of software components is deployed on the edges node to allow edge nodes to continue running when the network disconnects. Examples of such solutions include:
 
 - [KubeEdge](https://github.com/kubeedge/kubeedge)
 - [OpenYurt](https://github.com/openyurtio/openyurt)
@@ -60,7 +60,7 @@ These solutions meet condition 1 of the design principles.
 
 ### Edge Cluster 
 
-These solutions have the control plane including apiserver, controllers and scheduler in the edge sites. Examples of such solutions include:
+These solutions run full clusters on the edge with the control plane such as apiserver, controllers and scheduler. Examples of such solutions include:
 
 - [Kubefed](https://github.com/kubernetes-sigs/kubefed)
 - [Karmada](https://github.com/karmada-io/karmada)
