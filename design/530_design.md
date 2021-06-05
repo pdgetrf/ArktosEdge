@@ -38,13 +38,17 @@ Altogether, meeting the three requirements would allow applications to run on th
 
 ### Flexible Topology
 
-In addition, observing that edge environments could have multiple layers and hierarchies following either locality or logical distribution, Centaurus edge is designed to allow hierarchical construction of edge cluster topology for flexible configurability.
+Edge computer resources are usually deployed in 2+ layers, as shown in the following figure. "Edge site" represents a location with a certain amount of compute resources co-exist, in the same network sometimes. "Device" represents data collection device such as IoT, cameras, temperature sensors, etc. The number of layers and inter-connection topology are usually the aggregated result of various application design considerations such as latency, data locality and safety, network bandwidth, etc. On edge sites closer to the user, there's usually less computing power, but data takes less time to transit, whereas at higher layers, more computing power (and electricities capacity for cooling too) is available, but data takes longer to arrive. In between these, there's myriad possible configurations. Noting such layered feature, Centaurus edge is designed to allow hierarchical construction of edge cluster topology for flexible configurability.
+
+<img src="images/layered-edge.png"
+     width="60%"
+     align="center"/>
 
 ## Existing Solutions
 
 ### IoT
 
-These solutions provide functions to manage computing nodes running on the edge environments. The control plane sits in the cloud, and an "agent" type of software components is deployed on the edges node to allow edge nodes to continue running when the network disconnects. The existing solutions includes:
+These solutions provide functions to manage computing nodes running on the edge environments. The control plane sits in the cloud, and an "agent" type of software components is deployed on the edges node to allow edge nodes to continue running when the network disconnects. Examples of such solutions includes:
 
 - [KubeEdge](https://github.com/kubeedge/kubeedge)
 - [OpenYurt](https://github.com/openyurtio/openyurt)
@@ -56,7 +60,7 @@ These solutions meet condition 1 of the design principles.
 
 ### Edge Cluster 
 
-These solutions have the control plane including apiserver, controllers and scheduler in the edge sites. The existing solutions includes:
+These solutions have the control plane including apiserver, controllers and scheduler in the edge sites. Examples of such solutions include:
 
 - [Kubefed](https://github.com/kubernetes-sigs/kubefed)
 - [Karmada](https://github.com/karmada-io/karmada)
