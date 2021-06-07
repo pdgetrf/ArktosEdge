@@ -10,16 +10,16 @@ The prosperity of cloud technologies, 5G and AI brings vast opportunities for ed
 
 ## Scenarios & Design Considerations
 
-Edge computing is being adopted in old and new industries at a quick pace. From factory automation, automated vehicles, security surveillance,  medical operation, remote monitoring, etc., the benefit of low latency, hight
+Edge computing is being adopted in traditional and new industries at a quick pace. Applications for factory automation, automated vehicles, security surveillance,  medical operation, remote monitoring, etc. are enjoying the benefits of shifting workload closer to the fields of operation. In specific, here are  three of the most prominent fields that are seeing the most development with edge adoption: 
 
 - IoT, where devices such as temperature sensors and surveillance cameras are connected to edge nodes.
 - Smart Factory, where cluster of nodes run on the edge site.
-- Multi-access edge computing (MEC), where edge applications run on edge nodes or clusters places in or close to the cellular network.
+- Multi-access edge computing (MEC), where edge applications run on edge nodes or clusters placed in or close to the cellular network.
 
-From the three types of scenarios, the edge environments can be summarized to have the following 
+A common theme of these fields is data driven. Data is captured at the user site (the "edge"). Due to the size, security and latency limitation, it's more beneficial to process the data as close to the capturing sites as possible. This is especially needed for mission critical applications such as medical operation that utilizes AI for image segmentation and analysis. Inference needs to be carried out onsite with high reliability and low latency. Here is a summary of the typical edge computing environment features:
 
 - Low computing power
-- Low energy suply and consumption
+- Low energy supply and consumption
 - Unstable network connection
 - Smaller or no dev-ops teams
 - Complex topology
@@ -38,7 +38,7 @@ Altogether, meeting the three requirements would allow applications to run on th
 
 ### Flexible Topology
 
-Edge computer resources are usually deployed in 2+ layers, as shown in the following figure. "Edge site" represents a location with a certain amount of compute resources co-exist, in the same network sometimes. "Device" represents data collection device such as IoT, cameras, temperature sensors, etc. The number of layers and inter-connection topology are usually the aggregated result of various application design considerations such as latency, data locality and safety, network bandwidth, etc. On edge sites closer to the user, there's usually less computing power, but data takes less time to transit, whereas at higher layers, more computing power (and electricities capacity for cooling too) is available, but data takes longer to arrive. In between these, there's myriad possible configurations. Noting such layered feature, Centaurus edge is designed to allow hierarchical construction of edge cluster topology for flexible configurability.
+Edge computer resources are usually deployed in 2+ layers, as shown in the following figure. "Edge site" represents a location with a certain amount of compute resources co-exist, in the same network sometimes. "Device" represents data collection devicess such as IoT, cameras, temperature sensors, etc. The number of layers and interconnection topology are usually the aggregated result of various application design considerations such as latency, data locality and safety, network bandwidth, etc. On edge sites closer to the user, there's usually less computing power, but data takes less time to transit, whereas at higher layers, more computing power (and electricity capacity for cooling too) is available, but data takes longer to arrive. In between these, there's myriad of possible configurations. Noting such layered feature, Centaurus edge is designed to allow hierarchical construction of edge cluster topology for flexible configurability.
 
 <img src="images/layered-edge.png"
      width="60%"
@@ -48,7 +48,7 @@ Edge computer resources are usually deployed in 2+ layers, as shown in the follo
 
 ### IoT
 
-These solutions provide functions to manage computing nodes running on the edge environments. The control plane sits in the cloud, and an "agent" type of software components is deployed on the edges node to allow edge nodes to continue running when the network disconnects. Examples of such solutions include:
+These solutions provide functions to manage computing nodes running on the edge environments. The control plane sits in the cloud, and an "agent" type of software component is deployed on the edge node to allow edge nodes to continue running when the network disconnects. Examples of such solutions include:
 
 - [KubeEdge](https://github.com/kubeedge/kubeedge)
 - [OpenYurt](https://github.com/openyurtio/openyurt)
