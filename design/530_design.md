@@ -24,6 +24,8 @@ A common theme of these fields is data driven. Data is captured at the user site
 - Smaller or no dev-ops teams
 - Complex topology
 
+The goal of Centaurus edge is providing a framework that allows user applications to run reliably in the edge environments. Note that the difference between running applications in local environments and on the edge is that edge can provide the benefits of both the cloud and local computing. Cloud environments provide vast computing power ("unlimited" in illusion) with longer data transmit latency while edge comes in with various computing power and network speeds. For example, AI training is better suited in the cloud while the inference is better on the edge. Edge computing is not equal to "running things in a local data center", but rather to offer a way for different components of applications to run in their best suited environments in collective efforts. 
+
 ## Design Principles
 
 ### Robustness
