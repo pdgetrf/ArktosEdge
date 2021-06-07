@@ -2,7 +2,7 @@
 
 ## Abstract
 The prosperity of cloud technologies, 5G and AI brings vast opportunities for edge computing where computation migrates from centralized data centers to on-prem, at-home, and remote areas. This design introduces the edge-computing framework for Centaurus. Observing and honoring the requirements specific to edge environments, e.g. low latency, high survivability, and hierarchically distributed architecture, this design features 
-1. unning clusters on the edge, alongside with edge nodes,
+1. Running clusters on the edge, alongside with edge nodes,
 2. Flexible topologies where edge clusters are connected in a multi-layer tree-like structure,
 3. Flexible flavored clusters on the edge, such as Arktos, K8s and K3s, 
 4. Direct inter-cluster communication without going through the central cloud, and, 
