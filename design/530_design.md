@@ -8,15 +8,15 @@ The prosperity of cloud technologies, 5G and AI brings vast opportunities for ed
 4. Direct inter-cluster communication without going through the central cloud, and, 
 5. Smart edge cluster formation. 
 
-## Scenarios
+## Scenarios & Design Considerations
+
+Edge computing is being adopted in old and new industries at a quick pace. From factory automation, automated vehicles, security surveillance,  medical operation, remote monitoring, etc., the benefit of low latency, hight
 
 - IoT, where devices such as temperature sensors and surveillance cameras are connected to edge nodes.
 - Smart Factory, where cluster of nodes run on the edge site.
 - Multi-access edge computing (MEC), where edge applications run on edge nodes or clusters places in or close to the cellular network.
 
-## Requirements 
-
-Edge computing environments have the following key differences comparing to the cloud environments:
+From the three types of scenarios, the edge environments can be summarized to have the following 
 
 - Low computing power
 - Low energy suply and consumption
