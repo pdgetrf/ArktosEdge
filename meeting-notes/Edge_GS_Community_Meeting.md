@@ -21,3 +21,11 @@
 - Edge cluster status reporting requirement, use case
   - cluster size & level limitation
   - connection breaks and resumes, perf test
+
+## 06/07
+
+### Agenda:
+
+- GS release
+- Outstanding work
+- Edge inter-communication progress
