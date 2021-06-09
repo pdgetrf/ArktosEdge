@@ -295,13 +295,14 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 - Status
   - [Design doc](https://github.com/pdgetrf/ArktosEdge/blob/main/design/530_design.md)
   - [ONE deadline 6/20](https://events.linuxfoundation.org/open-networking-edge-summit-north-america/program/cfp) vs OSS in Seattle
-  - 7/30 Release Planning
+  - 7/30-> 8/30 Release Planning
     - Items: 
       - Edge Cluster
       - Cascading Clusters
       - Inter-cluster Communication
     - Repo
     - Feature gap sync with Akraino release/demo
+    - UWB edge use case, legal assurence
   - MEC
  - POC
    - Inter-cluster Communication
