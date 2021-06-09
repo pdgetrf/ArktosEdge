@@ -302,6 +302,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
       - Inter-cluster Communication
     - Repo
     - Feature gap sync with Akraino release/demo
+  - MEC
  - POC
    - Inter-cluster Communication
 
