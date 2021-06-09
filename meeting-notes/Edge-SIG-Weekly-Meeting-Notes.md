@@ -294,6 +294,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 ### Agenda
 - Status
   - [Design doc](https://github.com/pdgetrf/ArktosEdge/blob/main/design/530_design.md)
+  - [ONE deadline 6/20](https://events.linuxfoundation.org/open-networking-edge-summit-north-america/program/cfp)
   - 7/30 Release Planning
     - Items: 
       - Edge Cluster
