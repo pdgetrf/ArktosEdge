@@ -289,6 +289,21 @@ argument between all resource connecting to cloud vs local inter-connected edge 
   - Dev & Release plan 
     - Akrano demo 8/26
 
+
+# 6/9
+### Agenda
+- Status
+  - [Design doc](https://github.com/pdgetrf/ArktosEdge/blob/main/design/530_design.md)
+  - 7/30 Release Planning
+    - Items: 
+      - Edge Cluster
+      - Cascading Clusters
+      - Inter-cluster Communication
+    - Repo
+    - Feature gap sync with Akraino release/demo
+ - POC
+   - Inter-cluster Communication
+
+
 ### Note
 - 
-
