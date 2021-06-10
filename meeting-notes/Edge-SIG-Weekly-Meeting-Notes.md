@@ -309,4 +309,10 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 
 
 ### Note
-- 
+- Alcor CNI not compatible?
+- Inter-cluster communication scope: 
+  - Scoped:
+    - pods that belong to the same VPC but in different physical clusters to talk to each other 
+    - pods that belong to different VPCs in different physical clusters to talk to each other
+  - Non-scoped: 
+    - pods that belong to different VPCs in the same physical cluster to talk to each other (Mizar)
