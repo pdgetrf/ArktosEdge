@@ -44,7 +44,7 @@
     - cloud <-> edge tunnel/proxy
     - edge anomomy
       - edge-side apiserver/caching layer
-      - edge node and pod health check / stay alive
+      - edge node and npod health check / stay alive
       - resource grouping (node group, cluster group, deploymet/service group)
     - edge cluster
       - deployment and management
@@ -294,7 +294,9 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 ### Agenda
 - Status
   - [Design doc](https://github.com/pdgetrf/ArktosEdge/blob/main/design/530_design.md)
-  - [ONE deadline 6/20](https://events.linuxfoundation.org/open-networking-edge-summit-north-america/program/cfp) vs OSS in Seattle
+  - Deadlines:
+    - [ONE deadline 6/20](https://events.linuxfoundation.org/open-networking-edge-summit-north-america/program/cfp), ICC scope
+    - [OSS deadline 6/13](https://events.linuxfoundation.org/open-source-summit-north-america/), general scope
   - 7/30-> 8/30 Release Planning
     - Items: 
       - Edge Cluster
