@@ -248,5 +248,9 @@ For some user scenarios, such as MEC, it is beneficial if edge clusters at diffe
      width="65%" 
      align="center"/>
 
-
-This part is still undergoing research and will be updated soon.
+The scope of the inter-cluster communication feature is: 
+  - Scoped:
+    - pods from the same VPC and in different physical clusters to communicate 
+    - pods from different VPCs in different physical clusters to communicate
+  - Non-scoped: 
+    - pods from different VPCs in the same physical cluster to talk to each other (Mizar)
