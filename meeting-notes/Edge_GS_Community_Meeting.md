@@ -35,4 +35,3 @@
 - Current geological scheduling, next step: QoS
 - Scaling: Ks of nodes
 - Peak scaling, 1k nodes/5 min
-- 
