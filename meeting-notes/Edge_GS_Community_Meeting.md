@@ -35,3 +35,20 @@
 - Current geological scheduling, next step: QoS
 - Scaling: Ks of nodes
 - Peak scaling, 1k nodes/5 min
+
+
+## 06/14
+
+### Agenda:
+
+- GS requirements
+- Edge
+  - Requirements
+  - Progress
+  - Release planning
+    - [Feature specifications](https://github.com/pdgetrf/ArktosEdge/blob/main/design/830_planning.md)
+  - POC:
+    - Inter-cluster communication
+
+### Notes:
+-
