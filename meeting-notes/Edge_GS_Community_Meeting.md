@@ -51,4 +51,4 @@
     - Inter-cluster communication
 
 ### Notes:
--
+- GS supports K8s/Arktos (estimate)
