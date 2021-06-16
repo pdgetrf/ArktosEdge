@@ -335,6 +335,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
     - P2P solution scoping
       - https://skupper.io/index.html
       - https://cilium.io/blog/2019/03/12/clustermesh
+      - https://libp2p.io/
       - service mesh?
     - [ ] Mizar requirement one-pager
 
