@@ -318,3 +318,24 @@ argument between all resource connecting to cloud vs local inter-connected edge 
     - pods that belong to different VPCs in different physical clusters to talk to each other
   - Non-scoped: 
     - pods that belong to different VPCs in the same physical cluster to talk to each other (Mizar)
+
+
+# 6/16
+
+### Agenda
+
+- [x] [Open Source Summit](https://events.linuxfoundation.org/open-networking-edge-summit-north-america/program/cfp) proposal
+- [ ] [ONE deadline 6/20](https://events.linuxfoundation.org/open-networking-edge-summit-north-america/program/cfp), ICC scope
+- POC
+  - Inter-cluster Communication
+      - Scopes: 
+        - pods that belong to the **same** VPC but in different physical clusters to talk to each other 
+        - pods that belong to **different** VPCs in different physical clusters to talk to each other 
+    - high-level architecture
+    - P2P solution scoping
+      - https://skupper.io/index.html
+      - https://cilium.io/blog/2019/03/12/clustermesh
+      - service mesh?
+    - [ ] Mizar requirement one-pager
+
+### Notes
