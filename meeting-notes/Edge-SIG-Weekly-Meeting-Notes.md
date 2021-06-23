@@ -353,5 +353,8 @@ argument between all resource connecting to cloud vs local inter-connected edge 
     - package paths
     - control plane management
     - [ ] Mizar requirement one-pager
+- Next monday community meeting
+  - libp2p talk
+  - UWB use case walk through
 
 ### Notes
