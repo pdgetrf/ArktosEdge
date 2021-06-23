@@ -340,3 +340,18 @@ argument between all resource connecting to cloud vs local inter-connected edge 
     - [ ] Mizar requirement one-pager
 
 ### Notes
+
+
+# 6/23
+
+### Agenda
+
+- [x] [Open Source Summit](https://events.linuxfoundation.org/open-networking-edge-summit-north-america/program/cfp) proposal
+- [x] [ONE deadline 6/20](https://events.linuxfoundation.org/open-networking-edge-summit-north-america/program/cfp), ICC scope
+- POC
+  - Inter-cluster Communication
+    - package paths
+    - control plane management
+    - [ ] Mizar requirement one-pager
+
+### Notes
