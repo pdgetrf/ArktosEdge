@@ -358,3 +358,30 @@ argument between all resource connecting to cloud vs local inter-connected edge 
   - UWB use case walk through
 
 ### Notes
+
+# 6/30
+
+### Agenda
+
+- Inter-cluster Communication
+  - Timeline
+    - Overall design being finalized
+    - POC Risk: data flow
+      - Connectivity
+      - Performance
+  - POC
+    - Data flow
+      - Divider redirect, possibly as a Mizar feature in future release
+      - Gateway packet packing and transfering
+    - Control flow
+      - VPC & subnet creation top-down through Mission
+      - VPC & subnet global update as a distributed map (slides)
+    - [ ] Mizar requirement one-pager
+      - Mizar's pod integration with VPC and subnet
+      - network control plane
+      - Configurable divider for *XDP_REDIRECT*
+    - P2P solution survey by Eunju
+- External collab
+  - libp2p talk
+  - UWB use case to be presented in a few weeks
+
