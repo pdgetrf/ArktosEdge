@@ -366,6 +366,10 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 - Inter-cluster Communication
   - Status
     - Overall design being finalized
+      - [ ] Design doc
+        - Scope
+        - Data flow
+        - Control flow  
     - POC Risk: data flow
       - Connectivity
       - Performance
