@@ -364,7 +364,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 ### Agenda
 
 - Inter-cluster Communication
-  - Timeline
+  - Status
     - Overall design being finalized
     - POC Risk: data flow
       - Connectivity
