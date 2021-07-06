@@ -242,15 +242,24 @@ The tree structure of the Centaurus edge allows clusters on the edge to join as 
 In addition to "attachment", a second option is to allow Centaurus edge framework to group a set of edge nodes into a cluster based on certain criteria. For example, as shown on the left of the above figure, users have a set of edge nodes (light blue, yellow, green and darker blue). These nodes are then selected (either by user's manual inputs or automatically chosen) to be converted and grouped together into an edge cluster. This approach has multiple benefits. Firstly, users are freed from managing cluster operation, and secondly, cluster node selection can be automated based on workload resource requirement and compute resource availability. This will be further investigated in later release cycles.
 
 ### Inter-cluster Communication
-For some user scenarios, such as MEC, it is beneficial if edge clusters at different locations could communicate with each other without going through the central cloud. The following figure is an example. Two pods in the same VPC 1 could be distributed into two different clusters. The goal is to allow communication between these two pods without routing through the cloud.  
+For some user scenarios, such as MEC, it is beneficial for edge clusters at different locations to communicate with each other without going through the cloud. The following figure is an example. Two pods in the same VPC (Virtual Private Cloud) 1 could be distributed into two different clusters. The goal is to allow communication between these two pods without routing through the cloud.  
 
 <img src="images/inter-cluster-comm.png"
      width="65%" 
      align="center"/>
 
-The scope of the inter-cluster communication feature is: 
-  - Scoped:
-    - pods from the same VPC and in different physical clusters to communicate 
-    - pods from different VPCs in different physical clusters to communicate
-  - Non-scoped: 
-    - pods from different VPCs in the same physical cluster to talk to each other (Mizar)
+The scope of the inter-cluster communication feature is:
+  1. pods from the same VPC and in different physical clusters to communicate 
+  2. pods from different VPCs in different physical clusters to communicate
+
+The inter-cluster communication feature is to be built upon virtualizing K8s cluster networking space into VPCs and subnets. A VPC represents the network space for a certain organization or tenant, and contains one or many subnets which further divides the VPC into smaller spaces. Communication between pods in the same cluster is implemented in project such as [CentaurusInfra/mizar](https://github.com/CentaurusInfra/mizar). For the edge inter-cluster communication feature, the following assumptions are used:
+
+- A VPC could span one or more edge-clusters
+- A subnet within a VPC can only belong to one edge cluster
+- An edge cluster could contain more than one subnets and VPCs
+
+The following figure shows an example for VPC and subnet for a cascaded edge cluster system:
+
+<img src="images/vpc-subnet.png"
+     width="65%" 
+     align="center"/>
