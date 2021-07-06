@@ -286,3 +286,18 @@ Given the distributed features of edge computing, the inter-cluster communicatio
      align="center"/> 
 
 In each edge cluster, there's a control plane and data plane. The control plane manages network objects (e.g. VPCs and subnets) and their workflows, and is responsible for programming the data plane components. The data plane, programmed by an agent on each node that takes info from the control plane, is responsible for actual network communication between pods. In the Mizar project, both control planes for such intra-cluster networking mechanism are implemented. Communication between pods within a subnet is managed by the "bouncer" component while cross-subnet traffic is managed by the "divider" component. Both bouncer and divider are [XDP](https://www.iovisor.org/technology/xdp) programs that are in charge of managing traffic with high performance and scalability. Each edge cluster runs a standalone network management system such as Mizar (control plane and data plane). Comparing with running Mizar for a single K8s cluster, one key difference is that in an edge cluster, the network control plane does not always contain the entire range of network objects between VPC can span beyond a single cluster. Each network control plane simply works with the network objects in its sight from the cluster's etcd. 
+
+When the target pod is located in a different edge cluster from the source pod, the network traffic is to be routed between clusters through public network. For this purpose a gateway component is introduced. Each edge cluster with public IP runs and exposes the gateway. All gateways are connected through a point-2-point mesh mechanism. Each gateway is responsible of routing internal pod to pod traffic to its target cluster's gateway and vice versa. The internal traffic comes from edge cluster networking data plane components such as the divider. Divider keeps a list of subnets for its clusters. When the target subnet falls out of the list, traffic is redirected to the gateway. Gateway maintains a map of VPC/Subnet to gateway endpoints. Using this map, gateway packages packets with necessary security encapsulation and sends them through public network to the target gateway. On the receiving end, the other gateway validates, extracts packet, and then sends it to the network data plane component such as a divider for further routing. To reduce the number of "hops", within each cluster optimization such as "direct path" from Mizar could be used to allow packet to be sent to gateway directly after the first packet.  
+
+##### Gateway Endpoint Synchronization
+
+The endpoint information on each gateway is maintained in a distributed fashion. When a new VPC or subnet is created, other clusters that own the same VPC need to be notified to update their gateway map such that communication between those subnets could be routed. The following figure is an example.
+
+<img src="images/gateway-mesh.png"
+     width="85%" 
+     align="center"/>
+
+
+
+
+
