@@ -248,11 +248,18 @@ For some user scenarios, such as MEC, it is beneficial for edge clusters at diff
      width="65%" 
      align="center"/>
 
+#### Scopes
+
 The scope of the inter-cluster communication feature is:
+
   1. pods from the same VPC and in different physical clusters to communicate 
   2. pods from different VPCs in different physical clusters to communicate
 
-The inter-cluster communication feature is to be built upon virtualizing K8s cluster networking space into VPCs and subnets. A VPC represents the network space for a certain organization or tenant, and contains one or many subnets which further divides the VPC into smaller spaces. Communication between pods in the same cluster is implemented in project such as [CentaurusInfra/mizar](https://github.com/CentaurusInfra/mizar). For the edge inter-cluster communication feature, the following assumptions are used:
+
+
+#### Network Virtulization
+
+The inter-cluster communication feature is to be built upon virtualizing K8s cluster networking space into VPCs and subnets. A VPC represents the network space (e.g. a CIDR range) for a certain organization or tenant, and contains one or many subnets which further divides the VPC into smaller spaces. Communication between pods in the same cluster is implemented in project such as [CentaurusInfra/mizar](https://github.com/CentaurusInfra/mizar). For the edge inter-cluster communication feature, the following assumptions are used:
 
 - A VPC could span one or more edge-clusters
 - A subnet within a VPC can only belong to one edge cluster
@@ -261,5 +268,21 @@ The inter-cluster communication feature is to be built upon virtualizing K8s clu
 The following figure shows an example for VPC and subnet for a cascaded edge cluster system:
 
 <img src="images/vpc-subnet.png"
-     width="65%" 
+     width="75%" 
      align="center"/>
+
+In this example, each of the three edge clusters contains a few subnets from the same VPC. Note that the view of the above example is for *each* tenant. Subnets within a VPC do not have overlapped CIDR ranges but VPCs for different tenants can have overlapped CIDRs. 
+
+
+
+#### Inter-cluster Communication Architecture
+
+Given the distributed features of edge computing, the inter-cluster communication is designed without a centralized control plane. Each edge cluster works independently for its own networking while edge clusters work together in a "mesh" fashion for inter-cluster communication. The following figure illustrates an example of the architecture. There are three edge clusters cascaded in the same way as the figure above. Edge core
+
+
+
+<img src="images/inter-cluster-comm-arch.png"
+     width="85%" 
+     align="center"/> 
+
+In each edge cluster, there's a control plane and data plane. The control plane manages network objects (e.g. VPCs and subnets) and their workflows, and is responsible for programming the data plane components. The data plane, programmed by an agent on each node that takes info from the control plane, is responsible for actual network communication between pods. In the Mizar project, both control planes for such intra-cluster networking mechanism are implemented. Communication between pods within a subnet is managed by the "bouncer" component while cross-subnet traffic is managed by the "divider" component. Both bouncer and divider are [XDP](https://www.iovisor.org/technology/xdp) programs that are in charge of managing traffic with high performance and scalability. Each edge cluster runs a standalone network management system such as Mizar (control plane and data plane). Comparing with running Mizar for a single K8s cluster, one key difference is that in an edge cluster, the network control plane does not always contain the entire range of network objects between VPC can span beyond a single cluster. Each network control plane simply works with the network objects in its sight from the cluster's etcd. 
