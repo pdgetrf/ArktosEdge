@@ -398,7 +398,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 - Inter-cluster Communication
   - Status
     - Overall design being finalized
-      - [x] Design doc
+      - [x] [Design doc](https://github.com/pdgetrf/ArktosEdge/blob/main/design/530_design.md#inter-cluster-communication)
     - POC Risk: data plane flow
       - [tasks](https://github.com/pdgetrf/ArktosEdge/projects/2)
       - Target mid-July
