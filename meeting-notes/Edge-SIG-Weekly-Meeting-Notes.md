@@ -389,3 +389,25 @@ argument between all resource connecting to cloud vs local inter-connected edge 
   - libp2p talk
   - UWB use case to be presented in a few weeks
 
+
+
+# 7/7
+
+### Agenda
+
+- Inter-cluster Communication
+  - Status
+    - Overall design being finalized
+      - [x] Design doc
+    - POC Risk: data plane flow
+      - [tasks](https://github.com/pdgetrf/ArktosEdge/projects/2)
+  - POC
+    - Data flow
+      - Divider redirect, possibly as a Mizar feature in future release
+      - Gateway packet packing and transfering
+    - Control flow
+      - VPC & subnet global synchronization (slides)
+    - [x] [Mizar requirement one-pager](https://github.com/CentaurusInfra/mizar/issues/505#issuecomment-875104608)
+      - Mizar's pod integration with VPC and subnet
+      - Network control plane
+      - Configurable divider for *XDP_REDIRECT*
