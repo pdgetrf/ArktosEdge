@@ -414,3 +414,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
       - Mizar's pod integration with VPC and subnet
       - Network control plane
       - Configurable divider for *XDP_REDIRECT*
+
+- New Finds
+  - KubeEdge Robotics SIG
+    - [First SIG](https://www.bilibili.com/video/BV1MM4y1M7vF?share_source=copy_web)
