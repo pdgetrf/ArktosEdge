@@ -420,4 +420,5 @@ argument between all resource connecting to cloud vs local inter-connected edge 
     - [First SIG](https://www.bilibili.com/video/BV1MM4y1M7vF?share_source=copy_web)
 
 ### Notes
+- Mizar dev tips and tricks https://github.com/CentaurusInfra/mizar/wiki/Mizar-Developer-Tips-&-Tricks
 - Akrano release & demo 8/26
