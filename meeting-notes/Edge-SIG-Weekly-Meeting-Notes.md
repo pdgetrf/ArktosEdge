@@ -401,9 +401,9 @@ argument between all resource connecting to cloud vs local inter-connected edge 
       - [x] [Design doc](https://github.com/pdgetrf/ArktosEdge/blob/main/design/530_design.md#inter-cluster-communication)
     - POC Risk: data plane flow
       - [tasks](https://github.com/pdgetrf/ArktosEdge/projects/2)
-      - Target mid-July
+      - Targeting mid-July
       - Daily scrum
-      - Need some tech support from Mizar team on env setup and debugging
+      - Need tech support from Mizar team on env setup and debugging
   - POC
     - Data flow
       - Divider redirect, possibly as a Mizar feature in future release
