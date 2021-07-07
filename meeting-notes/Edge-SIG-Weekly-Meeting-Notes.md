@@ -418,3 +418,6 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 - New Finds
   - KubeEdge Robotics SIG
     - [First SIG](https://www.bilibili.com/video/BV1MM4y1M7vF?share_source=copy_web)
+
+### Notes
+- Akrano release & demo 8/26
