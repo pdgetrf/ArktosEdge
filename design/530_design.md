@@ -294,7 +294,7 @@ When the target pod is located in a different edge cluster from the source pod, 
 The endpoint information on each gateway is maintained in a distributed fashion. When a new VPC or subnet is created, other clusters that own the same VPC need to be notified to update their gateway map such that communication between those subnets could be routed. The following figure is an example.
 
 <img src="images/gateway-mesh.png"
-     width="85%" 
+     width="80%" 
      align="center"/>
 
 
