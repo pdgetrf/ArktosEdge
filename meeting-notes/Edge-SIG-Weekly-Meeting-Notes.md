@@ -437,8 +437,8 @@ argument between all resource connecting to cloud vs local inter-connected edge 
       - Targeting mid-July
   - POC
     - Goal: 
-      - redirect packet to gateway process
-      - unblock gateway development
+      - Redirect packet to gateway process
+      - Unblock gateway development
 
     - Mizar deeper dive and possible routes
       - ["1 program and 3 maps"](https://github.com/pdgetrf/ArktosEdge/blob/main/slides/how%20does%20Mizar%20maps%20work.pptx)
