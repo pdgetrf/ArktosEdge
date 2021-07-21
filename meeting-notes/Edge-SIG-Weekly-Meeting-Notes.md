@@ -453,3 +453,33 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 
 ### Notes
 
+# 7/21
+
+### Agenda
+- Overall status
+  - OSS not accepted :(
+    - Priority: design --> release -> perf test --> Academia conferences --> Exposure conferences
+  - Project tracked in two fronts:
+    - Release
+      - [x] Repo & CICD
+      - Edge Cluster featrues (owner: Qian)
+    - POC: Inter-cluster communication  
+- Inter-cluster Communication status
+  - POC Risk: data plane flow
+    - [tasks](https://github.com/pdgetrf/ArktosEdge/projects/2)
+    - Targeting end-July
+  - POC
+    - Goal: 
+      - Redirect packet to gateway process
+      - Unblock gateway development
+    - More Mizar deep dive and possible routes
+      - Possible routes for packet redirect at divider
+        - ~~[ ] Inject gateway ip into the ["network map"](https://github.com/CentaurusInfra/mizar/blob/e8c21f5f262d79dd71cfec5e511a898c7cb1dbe9/src/xdp/trn_transit_xdp_maps.h#L46) directly on host~~
+        - [x] Modify operator to inject gateway ip (possible [here](https://github.com/CentaurusInfra/mizar/blob/e8c21f5f262d79dd71cfec5e511a898c7cb1dbe9/mizar/dp/mizar/workflows/dividers/create.py#L59)) (owner: Shaojun)
+        - (Paused) Modify existing subnet0's endpoint value to point to gateway ip (note: currently default subnet0 consumes the entire CIDR space of vpc0, so the goal here is to simply divert packet traffic on divider to external gateway so gateway work can be unblocked) (owner: Qian)
+      - Release solution
+        - Modify transit XDP to redirect (release solution (possibly [here](https://github.com/CentaurusInfra/mizar/blob/e8c21f5f262d79dd71cfec5e511a898c7cb1dbe9/src/xdp/trn_transit_xdp.c#L132))
+        - Mizar control plane update the network map based on gateway's map
+        
+- Collaboration
+  - UWB to present next week
