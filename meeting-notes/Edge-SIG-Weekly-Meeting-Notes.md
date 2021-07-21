@@ -458,7 +458,12 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 ### Agenda
 - Overall status
   - OSS not accepted :(
-    - Priority: design --> release -> perf test --> Academia conferences --> Exposure conferences
+    - Priority: 
+```
+    design --> release -> perf test 
+                  |
+                  +-> Academia conferences -> Exposure conferences
+```
   - Project tracked in two fronts:
     - Release
       - [x] Repo & CICD
