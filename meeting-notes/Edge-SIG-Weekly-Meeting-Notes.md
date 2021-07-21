@@ -462,7 +462,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 ```
     design --> release -> perf test 
                   |
-                  +-> Academia conferences -> Exposure conferences
+                  +-> academia conferences -> exposure conferences
 ```
   - Project tracked in two fronts:
     - Release
