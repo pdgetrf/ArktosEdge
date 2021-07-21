@@ -466,8 +466,8 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 ```
   - Project tracked in two fronts:
     - Release
-      - [x] Repo & CICD
-      - Edge Cluster featrues (owner: Qian)
+      - [x] Repo & CICD (owner: Qian)
+      - [ ] Edge Cluster featrues (owner: Qian)
     - POC: Inter-cluster communication  
 - Inter-cluster Communication status
   - POC Risk: data plane flow
