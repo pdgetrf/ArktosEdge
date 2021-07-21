@@ -467,7 +467,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 - Inter-cluster Communication status
   - POC Risk: data plane flow
     - [tasks](https://github.com/pdgetrf/ArktosEdge/projects/2)
-    - Targeting end-July
+    - Targeting mid-July
   - POC
     - Goal: 
       - Redirect packet to gateway process
