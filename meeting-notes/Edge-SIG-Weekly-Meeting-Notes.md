@@ -510,6 +510,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
       - Goal: 
         - Packet e2e
         - Detailed gateway design
+    - [POD to VPC work by Mizar team](https://github.com/CentaurusInfra/mizar/pull/518)
   - Exposures
     - ONE & KubeCon NA not accepted :(
       - Reasons
