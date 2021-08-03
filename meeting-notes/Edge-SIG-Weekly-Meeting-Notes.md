@@ -493,6 +493,13 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 # 8/3
 
 ### Agenda
+- Priority
+```
+    design --> release -> perf test 
+                  |
+                  +-> academia conferences -> exposure conferences
+```
+
 - Overall status
   - Project tracks:
     - Release
@@ -506,12 +513,6 @@ argument between all resource connecting to cloud vs local inter-connected edge 
   - Exhibit proposals
     - ONE & KubeCon NA not accepted :(
       - Reasons
-      - Priority
-```
-    design --> release -> perf test 
-                  |
-                  +-> academia conferences -> exposure conferences
-```
     - Peer-reviewed Academic Conferences
       - CFP 
         - [IEEE Edge 2021](https://conferences.computer.org/edge/2021/cfp/), deadline **9/15**
