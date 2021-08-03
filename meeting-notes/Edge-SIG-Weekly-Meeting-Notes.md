@@ -488,3 +488,39 @@ argument between all resource connecting to cloud vs local inter-connected edge 
         
 - Collaboration
   - UWB to present next week
+
+
+# 8/3
+
+### Agenda
+- Overall status
+  - Project tracks:
+    - Release
+      - [x] [Release Plan](https://github.com/CentaurusInfra/fornax/blob/main/docs/fornax-design/release_plan.md)
+      - [x] Repo & CICD (owner: Qian)
+      - [x] Edge Cluster featrues (owner: Qian)
+    - POC: Inter-cluster communication  
+      - Goal: 
+        - Packet e2e
+        - Detailed gateway design
+  - Exhibit proposals
+    - ONE & KubeCon NA not accepted :(
+      - Reasons
+      - Priority
+```
+    design --> release -> perf test 
+                  |
+                  +-> academia conferences -> exposure conferences
+```
+    - Peer-reviewed Academic Conferences
+      - CFP 
+        - [IEEE Edge 2021](https://conferences.computer.org/edge/2021/cfp/), deadline **9/15**
+        - [The Sixth International Conference on Fog and Mobile Edge Computing](https://emergingtechnet.org/FMEC2021/)
+      - Focuses
+        - "Releated work"
+        - Application scenarios
+
+- Collaboration
+  - UWB stroke recovery project
+
+- Akraino Release (8/26)
