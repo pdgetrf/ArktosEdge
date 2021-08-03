@@ -510,7 +510,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
       - Goal: 
         - Packet e2e
         - Detailed gateway design
-  - Exhibit proposals
+  - Exposures
     - ONE & KubeCon NA not accepted :(
       - Reasons
     - Peer-reviewed Academic Conferences
