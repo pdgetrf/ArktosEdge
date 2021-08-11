@@ -526,3 +526,36 @@ argument between all resource connecting to cloud vs local inter-connected edge 
   - UWB stroke recovery project
 
 - Akraino Release (8/26)
+
+
+# 8/11
+
+### Agenda
+- Overall status
+  - Project tracks:
+    - Release
+      - [x] [Release Plan](https://github.com/CentaurusInfra/fornax/blob/main/docs/fornax-design/release_plan.md)
+      - [x] Edge cluster featrues (owner: Qian)
+        - [ ] [Detailed test plan](https://github.com/CentaurusInfra/fornax/pull/25)
+          - Manual at the moment, automated after 8/30 release
+          - ~20 key scenarios (more to come) 
+        - [ ] Edge application on hierarchical clusters
+          - Goal: demo the benefits of hierarchical edge clusters 
+          - Latency
+          - Autonomy
+          - Distributed cloud (offload cloud application to the edge, together with dependencies)
+          - 5G (network speed > local disk I/O --> short video encoding/decoding, gaming)
+      - Inter-cluster communication 8/30 
+        - release components: Gateway
+          1. Design doc + E2E POC Demo
+          2. Initial version of the Gateway, tested against Mizar's Kind env + Edge cluster release env
+    - POC: Inter-cluster communication  
+      - Goal: 
+        - Pod traffic e2e
+        - Detailed gateway design
+      - Tech discussion
+        - Multi-cluster VPC/Subnet
+        - VNI translation between different clusters
+        - Direct-path
+
+- Akraino Release (8/26)
