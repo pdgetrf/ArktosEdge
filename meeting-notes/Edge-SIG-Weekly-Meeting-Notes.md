@@ -536,7 +536,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
     - Release
       - [x] [Release Plan](https://github.com/CentaurusInfra/fornax/blob/main/docs/fornax-design/release_plan.md)
       - [x] Edge cluster featrues (owner: Qian)
-        - [ ] [Detailed test plan](https://github.com/CentaurusInfra/fornax/pull/25)
+        - [ ] [Detailed test plan](https://github.com/CentaurusInfra/fornax/blob/release-test-plan/docs/fornax_test/830_release_testplan.md)
           - Manual at the moment, automated after 8/30 release
           - ~20 key scenarios (more to come) 
         - [ ] Edge application on hierarchical clusters
