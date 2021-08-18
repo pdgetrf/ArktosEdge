@@ -559,3 +559,38 @@ argument between all resource connecting to cloud vs local inter-connected edge 
         - Direct-path
 
 - Akraino Release (8/26)
+
+
+# 8/18
+
+### Agenda
+- Overall status
+  - Project tracks:
+    - Release
+      - [x] [Release Plan](https://github.com/CentaurusInfra/fornax/blob/main/docs/fornax-design/release_plan.md)
+      - [x] Edge cluster featrues (owner: Qian)
+        - [ ] (Merged) [Detailed test plan](https://github.com/CentaurusInfra/fornax/blob/main/docs/fornax_test/830_release_testplan.md)
+        - [ ] Edge application on hierarchical clusters (owner: Qian)
+          - Goal: demo the benefits of hierarchical edge clusters 
+          - Benchmark
+          - CDN
+      - Inter-cluster communication 8/30 
+        - Release components: Gateway
+          1. Design doc + E2E POC Demo
+          2. Initial version of the Gateway, tested against Mizar's Kind env + Edge cluster release env
+        - POC
+          - Goal: 
+            - Pod traffic e2e
+            - Detailed gateway design
+          - Tech discussion
+            - Direct-path across clusters
+  - Exposures
+    - Peer-reviewed Academic Conferences
+      - CFP 
+        - [IEEE Edge 2021](https://conferences.computer.org/edge/2021/cfp/), deadline **9/15**
+        - [The Sixth International Conference on Fog and Mobile Edge Computing](https://emergingtechnet.org/FMEC2021/)
+      - Focuses
+        - "Releated work"
+        - Application scenarios
+
+- Akraino Release (8/26)
