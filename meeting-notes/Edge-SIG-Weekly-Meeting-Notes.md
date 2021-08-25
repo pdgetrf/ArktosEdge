@@ -594,3 +594,48 @@ argument between all resource connecting to cloud vs local inter-connected edge 
         - Application scenarios
 
 - Akraino Release (8/26)
+
+
+# 8/25
+
+### Agenda
+- Overall status
+  - Project tracks:
+    - Release
+      - Adjustment
+        - 830 release with edge cluster
+          - Cut release branch on 8/31 (next Wednesday)
+        - inter-cluster communication to be released in 930 (together with any edge cluster fixes)
+      - Edge application on hierarchical clusters (owner: Qian)
+          - Goal: demo the benefits of hierarchical edge clusters 
+          - Idea 1: Edge Benchmark
+            - Represents a class of applications that fit a certain profile. In terms of edge, 
+              - Latency & data locality
+                - Large data volume on the edge
+                - Data has regional features
+              - Local vs global processing
+                - Edge (Local) processing + global aggregation
+              - Autonomous against resource event
+                - Network failure
+                - Node failure
+              - Remote management
+                - Deploy and manage from upper level
+          - Idea 2: Real-world application
+          - 9/27 OSS edge talk with link to demo video
+      - Inter-cluster communication 9/30 
+        - POD VPC PR from Phu
+        - Switching from Kind env to K8s/Arktos env
+        - POC
+          - Goal: 
+            - Pod traffic e2e
+            - Detailed gateway design
+  - Exposures
+    - Peer-reviewed Academic Conferences
+      - CFP 
+        - [IEEE Edge 2021](https://conferences.computer.org/edge/2021/cfp/), deadline **9/15**
+        - [The Sixth International Conference on Fog and Mobile Edge Computing](https://emergingtechnet.org/FMEC2021/)
+      - Focuses
+        - "Releated work"
+        - Application scenarios
+
+- Akraino Release
