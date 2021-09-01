@@ -667,11 +667,11 @@ argument between all resource connecting to cloud vs local inter-connected edge 
         - 5G application
   - Exposures
     - Kubecon Publication, topic "Edge Networking with Mizar", 600-1000 words, due by 9/10 (owner Peng)
+    - Friday brown bag talks
     - Peer-reviewed Academic Conferences
       - CFP 
         - [IEEE Edge 2021](https://conferences.computer.org/edge/2021/cfp/), deadline **9/15** (not likely to make it)
         - [NSDI](https://www.usenix.org/conference/nsdi22/call-for-papers), Paper titles and abstracts due: 9/9, full paper 9/15
         - [The Sixth International Conference on Fog and Mobile Edge Computing](https://emergingtechnet.org/FMEC2021/) (need to look into it)
-
 - Akraino Release
   - On track
