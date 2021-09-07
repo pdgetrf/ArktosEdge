@@ -675,3 +675,41 @@ argument between all resource connecting to cloud vs local inter-connected edge 
         - [The Sixth International Conference on Fog and Mobile Edge Computing](https://emergingtechnet.org/FMEC2021/) (need to look into it)
 - Akraino Release
   - On track
+
+
+
+# 9/8
+
+### Agenda
+- "Macro trend" discussion
+- Overall status
+  - Project tracks:
+    - Release
+      - [x] 830 release
+        - [Release cut](https://github.com/CentaurusInfra/fornax/releases/tag/v0.1) 
+      - Edge application on hierarchical clusters (owner: Qian)
+          - Goal: demo the benefits of hierarchical edge clusters 
+            - AI application demo (by Qian)
+            - Benchmarking
+            - 9/27 OSS edge talk with link to demo video (todo)
+            - Serverless
+      - Inter-cluster communication 9/30 
+        - Switching from Kind env to real K8s cluster env (owner: Peng)
+          - [x] Env setup
+          - [ ] Documentation 
+        - POC
+          - Goal: 
+            - Pod traffic e2e
+            - Detailed gateway design
+      - New release brainstorming
+        - 5G application
+  - Exposures
+    - Kubecon Publication, topic "Edge Networking with Mizar", 600-1000 words, due by 9/10 (owner Peng)
+    - Friday brown bag talks
+    - Peer-reviewed Academic Conferences
+      - CFP 
+        - [IEEE Edge 2021](https://conferences.computer.org/edge/2021/cfp/), deadline **9/15** (not likely to make it)
+        - [NSDI](https://www.usenix.org/conference/nsdi22/call-for-papers), Paper titles and abstracts due: 9/9, full paper 9/15
+        - [The Sixth International Conference on Fog and Mobile Edge Computing](https://emergingtechnet.org/FMEC2021/) (need to look into it)
+- Akraino Release
+  - On track
