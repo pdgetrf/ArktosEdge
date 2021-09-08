@@ -685,8 +685,9 @@ argument between all resource connecting to cloud vs local inter-connected edge 
   - Project tracks:
     - Release
       - [x] [830 release](https://github.com/CentaurusInfra/fornax/releases/tag/v0.1) 
-      - Edge Cluster Mission Improvement inspired by AI demo experience (owner: Qian)
       - [ ] 930 release "Inter-cluster communication"
+        - Edge Cluster Mission Improvement inspired by AI demo experience (owner: Qian)
+          - Goal: to allow deployment of AI demo completely with Mission from cloud to edge
         - Switching from Kind env to real K8s cluster env (owner: Peng)
           - [x] Env setup (quick demo)
           - [x] [Documentation](https://github.com/pdgetrf/mizar_cluster_scripts) 
