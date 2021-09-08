@@ -698,7 +698,7 @@ argument between all resource connecting to cloud vs local inter-connected edge 
           - Gateway
       - New release brainstorming (next week after 15th)
   - Exposures
-    -  [Friday brown bag talks](https://www.youtube.com/watch?v=W0egc5W3Q2Q)
+    - [x] Friday brown bag talk, [video](https://www.youtube.com/watch?v=W0egc5W3Q2Q)
     - [ ] Kubecon Publication, topic "Edge Networking with Mizar", 600-1000 words, due by 9/10 (owner Peng)
     - Peer-reviewed Academic Conferences
       - CFP 
