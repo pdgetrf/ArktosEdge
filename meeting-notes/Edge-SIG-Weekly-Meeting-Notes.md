@@ -691,10 +691,10 @@ argument between all resource connecting to cloud vs local inter-connected edge 
           - [x] Env setup (quick demo)
           - [x] [Documentation](https://github.com/pdgetrf/mizar_cluster_scripts) 
         - POC
-          - Goal: 
-            - Pod traffic e2e
+          - Goals (targeting mid Sept)
+            - Pod traffic e2e (to use proxy as gateway)
             - Detailed gateway design
-        - Release item
+        - Release item (some risk due to team size change, to be further estimated by end of this week)
           - Gateway
       - New release brainstorming (next week after 15th)
   - Exposures
