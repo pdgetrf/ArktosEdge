@@ -681,35 +681,32 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 # 9/8
 
 ### Agenda
-- "Macro trend" discussion
 - Overall status
   - Project tracks:
     - Release
-      - [x] 830 release
-        - [Release cut](https://github.com/CentaurusInfra/fornax/releases/tag/v0.1) 
-      - Edge application on hierarchical clusters (owner: Qian)
-          - Goal: demo the benefits of hierarchical edge clusters 
-            - AI application demo (by Qian)
-            - Benchmarking
-            - 9/27 OSS edge talk with link to demo video (todo)
-            - Serverless
-      - Inter-cluster communication 9/30 
+      - [x] [830 release](https://github.com/CentaurusInfra/fornax/releases/tag/v0.1) 
+      - Edge Cluster Mission Improvement inspired by AI demo experience (owner: Qian)
+      - Inter-cluster communication 9/30
         - Switching from Kind env to real K8s cluster env (owner: Peng)
-          - [x] Env setup
-          - [ ] Documentation 
+          - [x] Env setup (quick demo)
+          - [x] [Documentation](https://github.com/pdgetrf/mizar_cluster_scripts) 
         - POC
           - Goal: 
             - Pod traffic e2e
             - Detailed gateway design
-      - New release brainstorming
-        - 5G application
+        - Release item
+          - Gateway
+      - New release brainstorming (next week after 15th)
   - Exposures
-    - Kubecon Publication, topic "Edge Networking with Mizar", 600-1000 words, due by 9/10 (owner Peng)
-    - Friday brown bag talks
+    -  [Friday brown bag talks](https://www.youtube.com/watch?v=W0egc5W3Q2Q)
+    - [ ] Kubecon Publication, topic "Edge Networking with Mizar", 600-1000 words, due by 9/10 (owner Peng)
     - Peer-reviewed Academic Conferences
       - CFP 
-        - [IEEE Edge 2021](https://conferences.computer.org/edge/2021/cfp/), deadline **9/15** (not likely to make it)
-        - [NSDI](https://www.usenix.org/conference/nsdi22/call-for-papers), Paper titles and abstracts due: 9/9, full paper 9/15
-        - [The Sixth International Conference on Fog and Mobile Edge Computing](https://emergingtechnet.org/FMEC2021/) (need to look into it)
+        - [NSDI](https://www.usenix.org/conference/nsdi22/call-for-papers)
+          - [ ] Paper titles and abstracts due: 9/9
+          - [ ] full paper 9/15
+- "Macro trend" discussion (due by 10/31)
+  - 5G application
+  - Cloud-cloud vs Cloud-edge
 - Akraino Release
   - On track
