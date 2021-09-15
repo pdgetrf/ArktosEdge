@@ -711,3 +711,30 @@ argument between all resource connecting to cloud vs local inter-connected edge 
   - Cloud-cloud vs Cloud-edge
 - Akraino Release
   - On track
+
+
+# 9/15
+
+### Agenda
+- Overall status
+  - Project tracks:
+    - Release
+      - [x] [830 release](https://github.com/CentaurusInfra/fornax/releases/tag/v0.1) 
+      - [ ] 930 release "Inter-cluster communication"
+        - [x] Edge Cluster Mission Improvement inspired by AI demo experience (owner: Qian)
+        - POC
+          - Goals (targeting mid Sept)
+            - Pod traffic e2e (to use proxy as gateway)
+            - Detailed gateway design
+        - Release item (to be further estimated by end of this week)
+      - New release brainstorming (next week after 15th)
+  - Exposures
+    - [x] [Kubecon Publication](https://vmblog.com/archive/2021/09/13/towards-a-scalable-reliable-and-secure-edge-computing-framework.aspx#.YUJra55Kg8N)
+    - Peer-reviewed Academic Conferences
+      - CFP 
+        - [NSDI](https://www.usenix.org/conference/nsdi22/call-for-papers), will aim for their next April deadline due to team size change
+- "Macro trend" discussion (due by 10/31)
+  - 5G application
+  - Cloud-cloud vs Cloud-edge
+- Akraino Release
+  - On track (documentation owner?)
