@@ -800,10 +800,14 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 - "Macro trend" discussion (due by 10/31)
   - 5G application
   - Cloud-cloud vs Cloud-edge
+  - Serverless
   - Paper reading
     - Deep Learning With Edge Computing- A Review
     - Adaptive Federated Learning in Resource Constrained Edge Computing Systems
     - Edge Intelligence- Paving the Last Mile of Artificial Intelligence With Edge Computing
     - The Emerging Landscape of Edge-Computing
+- Onboarding
 - Akraino Release
   - documentation owner settled
+- Notes:
+  - [Edge gallery for 5G](https://gitee.com/organizations/edgegallery/projects)
