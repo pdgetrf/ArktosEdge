@@ -777,3 +777,33 @@ argument between all resource connecting to cloud vs local inter-connected edge 
 - Akraino Release
   - documentation owner settled
 
+# 9/29
+
+### Agenda
+- Overall status
+  - Project tracks:
+    - Release
+      - [ ] 930 release "Inter-cluster communication"
+        - Edge-edge communication
+          - Automated dev env setup for Qian and David
+          - POC/Dev
+            - Pod traffic e2e (to use proxy as gateway) (70%)
+              - [x] Mizar control plane changes for gateway host
+              - [x] Mizar data plane to 
+                  1. [x] route traffic to user space on gateway host
+                  2. [x] avoid ep_host_cache on divider when traffic comes from the gateway host
+              - [ ] connect 2nd cluster and perform e2e test
+            - Detailed gateway design, 930 release
+      - New release brainstorming (next week after 27th)
+  - Exposures
+    - [x] OSS tutorial talk 9/27
+- "Macro trend" discussion (due by 10/31)
+  - 5G application
+  - Cloud-cloud vs Cloud-edge
+  - Paper reading
+    - Deep Learning With Edge Computing- A Review
+    - Adaptive Federated Learning in Resource Constrained Edge Computing Systems
+    - Edge Intelligence- Paving the Last Mile of Artificial Intelligence With Edge Computing
+    - The Emerging Landscape of Edge-Computing
+- Akraino Release
+  - documentation owner settled
