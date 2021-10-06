@@ -811,3 +811,29 @@ argument between all resource connecting to cloud vs local inter-connected edge 
   - documentation owner settled
 - Notes:
   - [Edge gallery for 5G](https://gitee.com/organizations/edgegallery/projects)
+
+
+# 10/06
+
+### Agenda
+- Overall status
+  - Project tracks:
+    - Release
+      - [x] 930 release
+        - Edge-edge communication
+      - New release brainstorming (next week)
+  - Exposures
+    - [x] KubeCon virtual booth slides tutorial talk 9/27
+- "Macro trend" discussion (due by 10/31)
+  - 5G application
+  - Cloud-cloud vs Cloud-edge
+  - Serverless
+  - [Edge gallery for 5G MEC](https://gitee.com/organizations/edgegallery/projects)
+  - Paper reading
+    - [ ] Deep Learning With Edge Computing- A Review
+    - [ ] Adaptive Federated Learning in Resource Constrained Edge Computing Systems
+    - [ ] Edge Intelligence- Paving the Last Mile of Artificial Intelligence With Edge Computing
+    - [ ] The Emerging Landscape of Edge-Computing
+- [x] Onboarding
+- Akraino Release
+  - [ ] documentation owner settled
