@@ -89,3 +89,9 @@
     - [ ] The Emerging Landscape of Edge-Computing
 - Akraino Release
   - [ ] log uploads?
+
+### notes
+- Serverless on the edge
+- Distributed storage (distributed data bus across edge) "Ceph across edge", on top of edge-edge
+
+
