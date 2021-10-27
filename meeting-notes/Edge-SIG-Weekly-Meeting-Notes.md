@@ -129,6 +129,7 @@
 
 - Akraino Release
   - [ ] log issue fix
-
+- 2nd brown bag
+  - Communication & presentation
 
 
