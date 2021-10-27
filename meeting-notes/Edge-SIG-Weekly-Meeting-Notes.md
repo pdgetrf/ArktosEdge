@@ -102,8 +102,11 @@
   - Project tracks:
     - Qian: Edge gateway agent POC & Dev
     - Shaojun: Control plane changes (POC code -> release code)
-    - David: Testing environment (catch up Mizar release version)
-    - Peng: Roadmap & landscape planning, team support
+    - David: Testing, dev environment to catch up Mizar newest release)
+    - Peng: 
+      - Roadmap & landscape planning
+      - Edge gateway initial release design
+      - team support
 - "Macro trend" & Roadmap (due by 10/31)
   - Edge team vision (slides)
   - Field scoping
