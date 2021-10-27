@@ -100,7 +100,9 @@
 ### Agenda
 - Overall status
   - Project tracks:
-    - Qian: Edge gateway agent POC & Dev
+    - Qian: 
+      - Research on [Submariner](https://github.com/submariner-io/submariner), [talk video](https://www.youtube.com/watch?v=fMhZRNn0fxQ)
+      - Edge gateway agent POC & Dev
     - Shaojun: Control plane changes (POC code -> release code)
     - David: Testing, dev environment to catch up Mizar newest release)
     - Peng: 
