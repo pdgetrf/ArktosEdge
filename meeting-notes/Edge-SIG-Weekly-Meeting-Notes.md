@@ -95,3 +95,35 @@
 - Distributed storage (distributed data bus across edge) "Ceph across edge", on top of edge-edge
 
 
+# 10/20
+
+### Agenda
+- Overall status
+  - Project tracks:
+    - Qian: Edge gateway agent POC & Dev
+    - Shaojun: Control plane changes (POC code -> release code)
+    - David: Testing environment (catch up Mizar release version)
+    - Peng: Roadmap & landscape planning, team support
+- "Macro trend" & Roadmap (due by 10/31)
+  - Edge team vision (slides)
+  - Field scoping
+    - Existing & Promising Solution
+      - [x] [Edge gallery for 5G MEC](https://gitee.com/organizations/edgegallery/projects)
+    - Academia Papers
+      - [x] The Emerging Landscape of Edge-Computing
+      - [x] Edge Intelligence- Paving the Last Mile of Artificial Intelligence With Edge Computing (60%)
+      - [x] Adaptive Federated Learning in Resource Constrained Edge Computing Systems
+      - [ ] Deep Learning With Edge Computing- A Review
+    - Industry Conferences
+      - "Global edge computing conference"
+        - Short term vs long term
+    - 5G & MEC
+      - ETSI doc on 5G scenario
+        - ["MEC in 5G networks"](https://www.etsi.org/images/files/ETSIWhitePapers/etsi_wp28_mec_in_5G_FINAL.pdf)
+        - ["Mobile-Edge Computing (MEC) Service Scenarios"](https://www.etsi.org/deliver/etsi_gs/mec-ieg/001_099/004/01.01.01_60/gs_mec-ieg004v010101p.pdf)
+
+- Akraino Release
+  - [ ] log issue fix
+
+
+
