@@ -105,7 +105,7 @@
       - Edge gateway agent POC & Dev
     - Shaojun: Control plane changes (POC code -> release code)
     - David: Testing, dev environment to catch up Mizar newest release)
-    - Peng: 
+    - Peng:
       - Roadmap & landscape planning
       - Edge gateway initial release design
       - team support
