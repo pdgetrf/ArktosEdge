@@ -95,7 +95,7 @@
 - Distributed storage (distributed data bus across edge) "Ceph across edge", on top of edge-edge
 
 
-# 10/20
+# 10/27
 
 ### Agenda
 - Overall status
