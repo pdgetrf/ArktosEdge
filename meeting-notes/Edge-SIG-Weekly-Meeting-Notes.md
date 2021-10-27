@@ -109,8 +109,8 @@
       - Roadmap & landscape planning
       - Edge gateway initial release design
       - team support
-- "Macro trend" & Roadmap (due by 10/31)
-  - Edge team vision (slides)
+- "Macro trend" & Roadmap
+  - Fornax goals review (slides)
   - Field scoping
     - Existing & Promising Solution
       - [x] [Edge gallery for 5G MEC](https://gitee.com/organizations/edgegallery/projects)
