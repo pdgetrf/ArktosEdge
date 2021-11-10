@@ -132,4 +132,56 @@
 - 2nd brown bag
   - Communication & presentation
 
+# 11/20
 
+### Agenda
+- Overall status
+  - Release 1/30 items
+    - Edge-edge communication
+      - VPC, subnet deployment through edge clusters
+      - Service/scaled endpoint based edge networking (POC)
+    - Edge storage & serverless scoping and initial design
+    - Edge scheduler scoping
+  - Team allocation:
+    - Qian: 
+      - [x] Edge communication agent
+      - [x] Knowledge transfer
+        - Edge clusters
+        - Edge AI application
+        - Edge agent 
+    - Shaojun: 
+      - [x] Control plane changes
+      - [ ] Data plane changes
+    - David: 
+      - [x] Testing, dev environment to catch up Mizar newest release
+      - [x] Knowledge transfer : Edge clusters
+    - Peng:
+      - Roadmap & landscape planning
+      - Edge gateway initial release design
+      - team support
+    - Edge agent demo
+- "Macro trend" & Roadmap
+  - Fornax goals
+    - https://www.centauruscloud.io/#projects
+  - Field scoping
+    - Key directions:
+      - Scheduling: Sina & global scheduler
+      - Edge storage
+      - Serverless
+      - Existing & Promising Solution
+    - Academia papers
+      - [x] The Emerging Landscape of Edge-Computing
+      - [x] Edge Intelligence- Paving the Last Mile of Artificial Intelligence With Edge Computing (60%)
+      - [x] Adaptive Federated Learning in Resource Constrained Edge Computing Systems
+      - [ ] Deep Learning With Edge Computing- A Review
+    - Industry conferences submission
+      - Deadlines for academia conference in 2022
+        - Topics:
+          - Edge cluster
+          - Edge communication
+          - Performance & utilities evaluation
+- Akraino Release
+- Talk and outreach
+  - 2nd brown bag: Communication & Presentation
+  - Information sharing: Mizar tooling for the Arktos team
+  - Community: UW Bothell CSS talks on our edge, possible project cooperation with grad students. Internship opportunities too.
