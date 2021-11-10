@@ -132,7 +132,7 @@
 - 2nd brown bag
   - Communication & presentation
 
-# 11/20
+# 11/10
 
 ### Agenda
 - Overall status
