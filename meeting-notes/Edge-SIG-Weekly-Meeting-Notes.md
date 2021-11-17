@@ -203,11 +203,14 @@
       - Scheduling
       - Runtime support (may be out of our scope)
     - Edge KV store POC
+    - AI face recognization app on hierarchical edge clusters
+      - spearate frontend with backend
+      - backend "smart" scaling
   - Team allocation:
     - Shaojun: 
       - [x] Control plane changes
       - [x] Data plane changes
-      - [ ] Scaled ep for edge
+      - [ ] Scaled ep for edge (to sync up with Edge team, slides for scenarios)
       - [ ] edge gateway agent (together with Peng) 
     - David: 
       - [ ] Edge cluster setup documentation and automation
