@@ -217,8 +217,8 @@
     - David: 
       - [ ] Edge cluster setup documentation and automation
     - Peng:
-      - Roadmap & landscape planning
-      - team support
+      - Roadmap & feature scoping
+      - Edge gateway agent POC -> release
     - Edge agent demo
 - Scoping & Roadmap
   - Field scoping
