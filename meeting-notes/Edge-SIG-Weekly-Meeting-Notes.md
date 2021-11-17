@@ -194,8 +194,10 @@
   - Infra Framework
   - Flexibility
   - Scalability
-  - Usability
   - Resilence
+  - Usability
+    - For end users
+    - For developers
 - Overall status
   - Release 1/30 items, see [project](https://github.com/CentaurusInfra/fornax/projects/2)
     - Edge communication (pod to pod, pod to service)
