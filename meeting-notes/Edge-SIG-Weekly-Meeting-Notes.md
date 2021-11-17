@@ -243,3 +243,8 @@
   - 2nd brown bag: Communication & Presentation
   - Information sharing: Mizar tooling for the Arktos team
   - Community: UW Bothell CSS talks on our edge, possible project cooperation with grad students. Internship opportunities too.
+
+### Notes
+- Manage cluster management at the infra level (), 
+- Security as a goal
+- serverless design
