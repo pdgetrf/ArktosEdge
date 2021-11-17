@@ -185,3 +185,56 @@
   - 2nd brown bag: Communication & Presentation
   - Information sharing: Mizar tooling for the Arktos team
   - Community: UW Bothell CSS talks on our edge, possible project cooperation with grad students. Internship opportunities too.
+
+
+# 11/17
+
+### Agenda
+- Centaurus edge factors
+  - Infra Framework
+  - Flexibility
+  - Scalability
+  - Usability
+  - Resilence
+- Overall status
+  - Release 1/30 items, see [project](https://github.com/CentaurusInfra/fornax/projects/2)
+    - Edge communication (pod to pod, pod to service)
+    - Serverless in a hierarchical edge environment POC
+      - Scheduling
+      - Runtime support (may be out of our scope)
+    - Edge KV store POC
+  - Team allocation:
+    - Shaojun: 
+      - [x] Control plane changes
+      - [x] Data plane changes
+      - [ ] Scaled ep for edge
+      - [ ] edge gateway agent (together with Peng) 
+    - David: 
+      - [ ] Edge cluster setup documentation and automation
+    - Peng:
+      - Roadmap & landscape planning
+      - team support
+    - Edge agent demo
+- Scoping & Roadmap
+  - Field scoping
+    - Key directions:
+      - Scheduling: 
+      - Edge storage (KV store)
+      - Serverless 
+        - Overview presentation next Tuesday, need to sync up with other participants' @Mengni
+        - Previous design by Casey
+        - Edge Scheduling
+        - New Runtime: WebAssembly
+    - Academia papers
+![image](https://user-images.githubusercontent.com/252020/142293582-a1956715-f34f-4522-b979-6a5ee7828671.png)
+    - Industry conferences submission
+      - [ ] Deadlines for academia conference in 2022
+        - Topics:
+          - Edge cluster
+          - Edge communication
+          - Performance & utilities evaluation
+- Akraino Release
+- Talk and outreach
+  - 2nd brown bag: Communication & Presentation
+  - Information sharing: Mizar tooling for the Arktos team
+  - Community: UW Bothell CSS talks on our edge, possible project cooperation with grad students. Internship opportunities too.
