@@ -202,9 +202,8 @@
   - Release 1/30 items, see [project](https://github.com/CentaurusInfra/fornax/projects/2)
     - Edge communication (pod to pod, pod to service)
     - Serverless in a hierarchical edge environment POC
-      - Scheduling
-      - Runtime support (may be out of our scope)
-    - Edge KV store POC
+      - stateful: Edge KV store POC
+      - runtime support (WebAssembly, etc.)
     - AI face recognization app on hierarchical edge clusters
       - spearate frontend with backend
       - backend "smart" scaling
