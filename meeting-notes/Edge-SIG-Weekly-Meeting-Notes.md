@@ -247,3 +247,53 @@
 - Manage cluster management at the infra level (), 
 - Security as a goal
 - serverless design
+
+
+# 11/24
+
+### Agenda
+- Overall status
+  - Release 1/30 items, see [project](https://github.com/CentaurusInfra/fornax/projects/2)
+    - Edge communication 
+      - pod to pod
+      - pod to service has feature gap from Mizar
+    - Stateful Serverless 
+      - stateful: Edge KV store POC
+      - runtime support (WebAssembly, etc.)
+    - AI face recognization app on hierarchical edge clusters
+      - convert to serverless
+      - spearate frontend with backend
+      - backend "smart" scaling
+  - Team allocation:
+    - Shaojun: 
+      - [x] Control plane changes
+      - [x] Data plane changes
+      - [ ] Scaled ep for edge (to sync up with Edge team, slides for scenarios)
+      - [ ] edge gateway agent (together with Peng) 
+    - David: 
+      - [ ] Edge cluster setup documentation
+      - [ ] Edge cluster setup automation
+    - Peng:
+      - Stateful serverless
+        - [x] Stateful serverless on edge talk
+        - [x] Basic serverless usage (Kubeless)
+        - [ ] Edge storage options try out
+        - [ ] Webassembly deeper dive
+      - Edge gateway agent design
+    - Edge agent demo
+- Scoping & Roadmap
+    - Industry conferences submission
+      - [ ] Deadlines for academia conference in 2022
+        - Topics:
+          - Edge cluster
+          - Edge-edge communication
+          - Performance & utilities evaluation
+- Akraino Release
+- Talk and outreach
+  - More video & streaming use cases and concrete scenarios
+  - 2nd brown bag: Communication & Presentation
+  - Information sharing: Mizar tooling for the Arktos team
+  - Community: UW Bothell CSS talks on our edge, possible project cooperation with grad students. Internship opportunities too.
+
+### Notes
+
