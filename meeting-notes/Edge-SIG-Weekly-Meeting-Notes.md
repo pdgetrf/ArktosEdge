@@ -337,6 +337,7 @@
           - CRDT based distributed KV store
           - "access-pattern aware key-value store"
           - Move data vs Move computation (regional scheduling)
+          - Horizontal regional "spill-out" scheduling
     - Edge agent demo
 - Scoping & Roadmap
     - Industry conferences submission
