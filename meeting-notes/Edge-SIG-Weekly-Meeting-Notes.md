@@ -335,6 +335,7 @@
           - [ ] OrbitDb
         - Edge KV storage possible directions
           - CRDT based distributed KV store
+            - Pros & cons
           - "access-pattern aware key-value store"
           - Move data vs Move computation (regional scheduling)
           - Horizontal regional "spill-out" scheduling
