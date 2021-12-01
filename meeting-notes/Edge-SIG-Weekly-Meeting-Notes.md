@@ -296,7 +296,7 @@
   - Community: UW Bothell CSS talks on our edge, possible project cooperation with grad students. Internship opportunities too.
 
 
-# 11/24
+# 12/01
 
 ### Agenda
 - Overall status
