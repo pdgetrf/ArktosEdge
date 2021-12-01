@@ -295,5 +295,59 @@
   - Information sharing: Mizar tooling for the Arktos team
   - Community: UW Bothell CSS talks on our edge, possible project cooperation with grad students. Internship opportunities too.
 
-### Notes
 
+# 11/24
+
+### Agenda
+- Overall status
+  - Release 1/30 items, see [project](https://github.com/CentaurusInfra/fornax/projects/2)
+    - Edge communication 
+      - pod to pod
+      - pod to service has feature gap from Mizar
+    - Stateful Serverless 
+      - stateful: Edge KV store POC
+      - runtime support (WebAssembly, etc.)
+    - AI face recognization app on hierarchical edge clusters
+      - convert to serverless
+      - spearate frontend with backend
+      - backend "smart" scaling
+  - Team allocation:
+    - Shaojun: 
+      - [x] Control plane changes
+      - [x] Data plane changes
+      - [x] Scaled ep for edge (to sync up with Edge team, slides for scenarios)
+      - [ ] Sync up edge gateway with the latest Mizar release (v0.9)
+    - David: 
+      - [x] Edge cluster setup documentation
+      - [ ] Edge cluster setup automation
+    - Peng:
+      - Edge gateway agent design
+      - Stateful serverless
+        - [x] Stateful serverless on edge talk
+        - [ ] Edge serverless framework try out
+          - [x] Kubeless
+          - [ ] Knative
+        - [ ] Edge serverless runtime try out
+          - [ ] WASMEdge
+        - [ ] Edge KV storage try out
+          - [ ] Anna
+          - [ ] annabellaDB
+          - [ ] OrbitDb
+        - Edge KV storage possible directions
+          - CRDT based distributed KV store
+          - "access-pattern aware key-value store"
+          - Move data vs Move computation (regional scheduling)
+    - Edge agent demo
+- Scoping & Roadmap
+    - Industry conferences submission
+      - [ ] Deadlines for academia conference in 2022
+        - Topics:
+          - Edge cluster
+          - Edge-edge communication
+          - Performance & utilities evaluation
+- Akraino Release
+- Talk and outreach
+  - 2nd brown bag: Communication & Presentation
+  - Information sharing: Mizar tooling for the Arktos team
+  - Community: 
+    - UW Bothell professor to give a talk on their use cases (in 2 weeks) and possible project cooperation with grad students
