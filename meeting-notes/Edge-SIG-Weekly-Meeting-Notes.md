@@ -358,7 +358,7 @@
 # 12/08
 
 ### Agenda
-- WasmEdge
+- [WasmEdge discussion](https://github.com/WasmEdge/WasmEdge)
   - Questions in mind
     - Usage, compatibility
     - Performance
