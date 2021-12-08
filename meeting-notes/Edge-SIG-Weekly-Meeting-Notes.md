@@ -353,3 +353,68 @@
   - Information sharing: Mizar tooling for the Arktos team
   - Community: 
     - UW Bothell professor to give a talk on their use cases (in 2 weeks) and possible project cooperation with grad students
+
+
+# 12/08
+
+### Agenda
+- WasmEdge
+  - Questions in mind
+    - Usage, compatibility
+    - Performance
+    - Limitation (comparing to container based FAAS)
+- Project Tracking
+  - Release 1/30 items, see [project](https://github.com/CentaurusInfra/fornax/projects/2)
+    - Edge communication 
+      - pod to pod communication
+    - Stateful Serverless 
+      - stateful: Edge KV store POC
+      - runtime support (WebAssembly, etc.)
+    - AI face recognization app on hierarchical edge clusters
+      - convert to serverless
+      - spearate frontend with backend
+      - backend "smart" scaling
+  - Team allocation:
+    - Shaojun: 
+      - [x] Control plane changes
+      - [x] Data plane changes
+      - [x] Scaled ep for edge (scraped for 1/30 release)
+      - [ ] Sync up edge gateway with the latest Mizar release (v0.9)
+    - David: 
+      - [x] Edge cluster setup documentation
+      - [ ] K3s in edge clusters
+    - Ke:
+      - [ ] Research on CDN serversless solutions 
+        - Presentation at the Monday community meeting (?)
+    - Peng:
+      - Edge gateway agent design
+      - CRDT DB for the edge
+      - Stateful serverless
+        - [x] Stateful serverless on edge talk
+        - [ ] Edge serverless framework try out
+          - [x] Kubeless
+          - [ ] Knative
+        - [ ] Edge serverless runtime try out
+          - [ ] WASMEdge
+        - [ ] Edge KV storage try out
+          - [x] Anna
+          - [ ] annabellaDB
+          - [ ] OrbitDb
+        - Edge KV storage possible directions
+          - CRDT based distributed KV store
+            - Pros & cons
+          - Move data vs Move computation (regional scheduling)
+          - Region-aware horizontal scheduling
+- Scoping & Roadmap
+    - Industry conferences submission
+      - [ ] Deadlines for academia conference in 2022
+        - Topics:
+          - Edge cluster
+          - Edge-edge communication
+          - Performance & utilities evaluation
+- Akraino Release
+- Talk and outreach
+  - 2nd brown bag: CRDT for A Stateful Edge (Theory, practice, edge use cases) ~ within 2 weeks
+  - 3rd brown bag: [Communication & Presentation]
+  - Community: 
+    - UW Bothell professor to give a talk on their use cases (in 2 weeks) and possible project cooperation with grad students
