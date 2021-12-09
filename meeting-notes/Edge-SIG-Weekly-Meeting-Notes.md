@@ -355,7 +355,7 @@
     - UW Bothell professor to give a talk on their use cases (in 2 weeks) and possible project cooperation with grad students
 
 
-# 12/08
+# 12/09
 
 ### Agenda
 - [WasmEdge discussion](https://github.com/WasmEdge/WasmEdge)
