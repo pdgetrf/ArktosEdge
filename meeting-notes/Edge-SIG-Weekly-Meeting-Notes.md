@@ -366,11 +366,11 @@
 - Project Tracking
   - Release 1/30 items, see [project](https://github.com/CentaurusInfra/fornax/projects/2)
     - Edge communication 
-      - pod to pod communication
+      - pod to pod communication (30%)
     - Stateful Serverless 
-      - stateful: Edge KV store POC
-      - runtime support (WebAssembly, etc.)
-    - AI face recognization app on hierarchical edge clusters
+      - stateful: Edge KV store POC (60%)
+      - runtime support (WebAssembly, etc.) (70%)
+    - AI face recognization app on hierarchical edge clusters (stretch goal, not started yet)
       - convert to serverless
       - spearate frontend with backend
       - backend "smart" scaling
@@ -379,13 +379,14 @@
       - [x] Control plane changes
       - [x] Data plane changes
       - [x] Scaled ep for edge (scraped for 1/30 release)
-      - [ ] Sync up edge gateway with the latest Mizar release (v0.9)
+      - [x] Sync up edge gateway with the latest Mizar release (v0.9)
+      - [ ] Merge perviously POC control plane code into Mizar
     - David: 
       - [x] Edge cluster setup documentation
       - [ ] K3s in edge clusters
     - Ke:
       - [ ] Research on CDN serversless solutions 
-        - Presentation at the Monday community meeting (?)
+        - To presentation at future community meeting (time TBD)
     - Peng:
       - Edge gateway agent design
       - CRDT DB for the edge
@@ -393,7 +394,6 @@
         - [x] Stateful serverless on edge talk
         - [ ] Edge serverless framework try out
           - [x] Kubeless
-          - [ ] Knative
         - [ ] Edge serverless runtime try out
           - [ ] WASMEdge
         - [ ] Edge KV storage try out
@@ -401,9 +401,11 @@
           - [ ] annabellaDB
           - [ ] OrbitDb
         - Edge KV storage possible directions
+          - CRDT & consistency fundamentals
           - CRDT based distributed KV store
-            - Pros & cons
           - Move data vs Move computation (regional scheduling)
+          - Cross-cluster storage
+          - Cross-cluster scheduling
           - Region-aware horizontal scheduling
 - Scoping & Roadmap
     - Industry conferences submission
