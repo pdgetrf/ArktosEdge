@@ -92,7 +92,7 @@
       - [x] Research on CDN serversless solutions
         - Blog post in review
         - To presentation at future community meeting (time TBD)
-      - Serverless storage & scheduling on the Edge
+      - Research on Serverless storage & scheduling on the Edge
     - Qingming:
       - [x] Onboarding
       - CRDT based distributed storage [Anna](https://github.com/hydro-project/anna/tree/master/docs)
