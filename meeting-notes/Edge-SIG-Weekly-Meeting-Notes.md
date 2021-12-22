@@ -83,6 +83,7 @@
         - [x] Scaled ep for edge (scraped for 1/30 release)
         - [x] Sync up edge gateway with the latest Mizar release (v0.9)
         - [x] Merge perviously POC control plane code into Mizar
+        - [x] Fix Fornax Repo CI
         - [ ] Gateway agent
     - David: 
       - [x] Edge cluster setup documentation
