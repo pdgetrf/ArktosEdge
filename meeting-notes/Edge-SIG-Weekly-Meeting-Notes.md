@@ -220,6 +220,7 @@
       - David:
         - [x] Edge cluster setup documentation
         - [x] K3s in edge clusters
+        - [x] Give a talk about KubeEdge code
         - [ ] Gateway userspace agent 
     - Stateful storage (KV store)
       - Ke:
