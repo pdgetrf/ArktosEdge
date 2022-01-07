@@ -180,3 +180,67 @@
   - 3rd brown bag: [Communication & Presentation]
   - Community: 
     - UW Bothell professor to give a talk on their use cases (in 2 weeks) and possible project cooperation with grad students
+
+
+# 1/7 2022
+
+### Agenda
+- Project Tracking
+  - Release 1/30 items, see [project](https://github.com/CentaurusInfra/fornax/projects/2)
+    - Code track
+      - Edge communication
+        - Edge cluster setup documentation (100%)
+        - E2E flow and agent design (100%)
+        - pod to pod communication
+          - Control plane changes (99% -> 100%)
+          - XDP changes (20% -> 50%)
+          - user space Agent (30% -> 40%)
+    - Research track
+      - Stateful Serverless 
+        - stateful: Edge KV store research (80%), POC (30% -> 40%)
+      - Edge Workload Runtime
+        - need syncing, will join scrum
+       
+  - Team allocation:
+    - Edge Communication
+      - Shaojun:
+        - edge communication release code
+          - [x] Sync up edge gateway with the latest Mizar release (v0.9)
+          - [x] Fix Fornax Repo CI
+          - [x] Edge gateway control plane {remote subnet, gateway host in config}
+          - [ ] Edge gateway metadata from user space to ebpf map on gateway host
+      - Peng:
+        - Edge gateway agent release code (highest priority)
+          - [x] Edge networking gateway agent e2e flow (see slides)
+          - [x] Edge networking gateway XDP changes (forking path on gw host)
+          - [ ] Anna POC
+            - [x] build anna
+            - [ ] run anna
+            - [ ] understand current algorithm & implementation (in C++)
+      - David:
+        - [x] Edge cluster setup documentation
+        - [x] K3s in edge clusters
+        - [ ] Gateway userspace agent 
+    - Stateful storage (KV store)
+      - Ke:
+        - [x] Research on CDN serversless solutions
+          - [x] Blog post in review
+          - To presentation at future community meeting (1/10?)
+        - [ ] Research on Edge KV storage
+    - Workload runtime
+      - Qingming & Yulin
+        - [ ] QuakContainer
+    - Collab
+      - Peng:
+        - Fornax intro at TU Wien Collaboration (possible collabration on edge scheduling)  
+
+- Scoping & Roadmap
+    - Industry conferences submission
+      - [ ] Deadlines for academia conference in 2022
+
+- Akraino Release
+- Talk and outreach
+  - 2nd brown bag: CRDT for A Stateful Edge (Theory, practice, edge use cases) ~1/20
+  - 3rd brown bag: [Communication & Presentation]
+  - Community: 
+    - UW Bothell professor to give a talk on their use cases (in 2 weeks) and possible project cooperation with grad students
