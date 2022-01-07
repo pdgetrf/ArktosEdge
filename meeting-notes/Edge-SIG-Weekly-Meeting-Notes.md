@@ -185,6 +185,19 @@
 # 1/7 2022
 
 ### Agenda
+- 2022 Goals
+  - Aligned with requirements (SIG, community, external collab such as TU and UWB)
+  - Feature Ownership
+    - One main area and one minor area per member
+  - Research and POC
+    - Part of the release
+    - Communication at Monday meeting (research topics, paper read, feature discussion)
+    - Research brown bag
+  - Project exposure
+    - Blog
+    - Academia and industry papers
+    - Local meet-up (per covid guidence)
+
 - Project Tracking
   - Release 1/30 items, see [project](https://github.com/CentaurusInfra/fornax/projects/2)
     - Code track
@@ -232,14 +245,15 @@
       - Qingming & Yulin
         - [ ] QuakContainer
     - Collab
-      - Peng:
-        - Fornax intro at TU Wien Collaboration (possible collabration on edge scheduling)  
+      - Peng & Ke:
+        - Fornax intro at TU Wien Collaboration (edge scheduling)  
 
 - Scoping & Roadmap
     - Industry conferences submission
       - [ ] Deadlines for academia conference in 2022
 
-- Akraino Release
+- [Akraino Release blog](https://www.lfedge.org/2022/01/05/introduction-akrainos-federated-multi-access-edge-cloud-platform-blueprint-in-r5/) (Thanks Deepak and everyone else who contributed)
+
 - Talk and outreach
   - 2nd brown bag: CRDT for A Stateful Edge (Theory, practice, edge use cases) ~1/20
   - 3rd brown bag: [Communication & Presentation]
