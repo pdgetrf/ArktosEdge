@@ -247,6 +247,7 @@
     - Collab
       - Peng & Ke:
         - Fornax intro at TU Wien Collaboration (edge scheduling)  
+        - C2C to research and work on edge cluster setup automation
 
 - Scoping & Roadmap
     - Industry conferences submission
