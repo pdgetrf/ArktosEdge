@@ -307,16 +307,16 @@
     - Stateful storage (KV store)
       - Ke:
         - [x] Research on CDN serversless solutions
-          - [x] Blog post in review
-          - To presentation at future community meeting (1/10?)
+          - [x] Blog post in review (pending Peng's section)
+          - To presentation at future community meeting (1/24?)
         - [ ] Research on Edge KV storage
+        - [ ] Golang, K8s, serverless runtimes
     - Workload runtime
       - Qingming & Yulin
      
     - Collab
-      - Peng & Ke:
-        - TU Wien Collaboration: scheduling roadmap
-        - C2C to research and work on edge cluster setup automation (being reviewed by their team)
+      - TU Wien Collaboration: scheduling roadmap
+      - C2C to research and work on edge cluster setup automation (being reviewed by their team)
 
 - Scoping & Roadmap
     - Industry conferences submission
