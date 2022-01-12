@@ -314,7 +314,7 @@
     - Workload runtime
       - Qingming & Yulin
      
-    - Collab
+    - Community Collaboration 
       - TU Wien Collaboration: scheduling roadmap
       - C2C to research and work on edge cluster setup automation (being reviewed by their team)
 
