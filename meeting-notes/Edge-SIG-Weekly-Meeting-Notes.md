@@ -19,10 +19,10 @@
         - [x] Data plane changes
         - [x] Scaled ep for edge (scraped for 1/30 release)
         - [x] Sync up edge gateway with the latest Mizar release (v0.9)
-        - [ ] Merge perviously POC control plane code into Mizar
+      - [ ] K3s in edge clusters (vending traffic)
     - David: 
       - [x] Edge cluster setup documentation
-      - [ ] K3s in edge clusters
+      - [ ] K3s in edge clusters (vending traffic)
     - Ke:
       - [ ] Research on CDN serversless solutions 
         - Blog post in writing
