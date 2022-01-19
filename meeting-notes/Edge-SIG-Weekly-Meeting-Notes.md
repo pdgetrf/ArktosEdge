@@ -344,11 +344,13 @@
           - XDP changes (90% -> 100%)
           - User space Agent (70%), on track
             - POC to Release code change (edge gateway ingress pkt forwarding options)
-    - Research track
+    - 1/30 Research track
       - Stateful Serverless
         - stateful: Edge KV store research (90%), POC (40% -> 50%)
+    - Research
       - Edge Workload Runtime
-
+      - Edge Serverless Runtime System
+ 
   - Team allocation:
     - Edge Communication
       - Shaojun:
