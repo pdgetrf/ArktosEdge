@@ -364,7 +364,7 @@
           - [x] Edge networking gateway XDP changes (forking path on gw host)
           - [ ] Anna POC
             - [x] build anna
-            - [] run anna
+            - [ ] run anna
               - [x] single node
               - [ ] multiple node
               - [ ] in a K8s cluster
