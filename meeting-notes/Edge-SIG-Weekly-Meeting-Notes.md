@@ -348,7 +348,6 @@
       - Stateful Serverless
         - stateful: Edge KV store research (90%), POC (40% -> 50%)
       - Edge Workload Runtime
-        - need syncing, will join scrum (@Yulin, please invite me to the scrum for project tracking)
 
   - Team allocation:
     - Edge Communication
