@@ -487,3 +487,74 @@
   - 3rd brown bag: [Communication & Presentation]
   - Community: 
     - UW Bothell professor to give a talk on their use cases (in 2 weeks) and possible project cooperation with grad students
+
+# 2/2 2022
+
+### Agenda
+
+- Project Tracking
+  - [Release 1/30](https://github.com/CentaurusInfra/fornax/projects/2) completed
+  - [New release](https://github.com/CentaurusInfra/fornax/projects/3) (4/30?) 
+    - Edge communication (Edge gateway)
+      - Userspace to send packet to local XDP
+      - Performance evaluation with profiling
+      - Control plane metadata syncing
+        - Option 1: graph algorithm
+        - Option 2: ipfs
+      - Sky computing rquirements (initial meeting on Friday)
+    - Fornax edge cluster
+      - Edge-edge communication validation (deployment of VPC, subnets on edge clusters)
+      - Edge cluster setup automation
+      - Repo CI setup
+    - Edge storage (KV store)
+      - Anna, IPFS, etc.
+      - Release items to be determined
+    - Edge Serverless Runtime System
+      - K8s/K3s + Fornax edge cluster components + serverless framework for edge
+      - Release items to be determined
+    - Edge Workload Runtime (Quark)
+ 
+  - Team:
+    - Edge Communication
+      - Shaojun:
+        - edge communication release code
+          - [ ] Edge gateway control plane
+          - [ ] Edge cluster validation for edge-edge communication
+      - David:
+        - [ ] Review and validate edge cluster setup scripts PR by C2C
+    - Stateful storage (KV store)
+      - Ke:
+        - [x] Research on Edge KV storage
+          - [ ] IPFS deep dive (DEMO)
+        - [ ] Golang, K8s, serverless runtimes
+          - [x] K8s cluster setup
+            - [doc](https://github.com/CentaurusInfra/fornax/wiki/Building-K8s-from-Source)
+            - [Scripts](https://github.com/CentaurusInfra/fornax/tree/main/docs/setup-guide/build_k8s_from_source) 
+          - [ ] K8s serverless frameworks (e.g. Kubeless)
+      - Peng:
+        - Edge gateway agent release code
+          - Edge gateway control plane metatdata algorithms
+          - Publication planning
+        - [ ] Anna POC
+          - [x] build anna
+          - [ ] run anna
+          - [x] understand current algorithm & implementation (in C++)
+            - [x] CRDT Lattic templates
+            - [ ] Consistent hashing tier (60%)    
+      - Qingming & Yulin
+     
+    - Community Collaboration
+      - TU Wien Collaboration: Polaris 2.0 proposal review
+        - TU meeting quick talk on scheduling (to review the final draft specification from Stefan)
+      - C2C to research and work on edge cluster setup automation
+        - [PR](https://github.com/CentaurusInfra/fornax/pull/68) in review
+
+- Scoping & Roadmap
+    - Industry conferences submission
+      - [ ] Deadlines for academia conference in 2022
+
+- Talk and outreach
+  - 2nd brown bag: CRDT for A Stateful Edge (Theory, practice, edge use cases) ~early Feb
+  - 3rd brown bag: [Communication & Presentation]
+  - Community: 
+    - UW Bothell
